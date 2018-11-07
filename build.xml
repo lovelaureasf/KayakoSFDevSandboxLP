@@ -8,7 +8,7 @@
     </taskdef>
 	<target name="push">
 	 <mkdir dir="DirOutput"/>
-	 <!-- <sf:retrieve username="${kayakousername.username}" password="${kayakopassword.password}"  serverurl="${sf.serverurl}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="package.xml"/>-->
+	 <sf:retrieve username="${kayakousername.username}" password="${kayakopassword.password}"  serverurl="${sf.serverurl}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="src/package.xml"/>
        <sf:deploy username="${kayakouatusername.tousername}" password="${kayakouatpassword.topassword}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" />
     </target>
 </project>
