@@ -1,0 +1,33 @@
+<apex:page controller="ProductUpdater">
+  <apex:form >
+  <apex:pageBlock id="opp" rendered="{!showopp}">
+      <apex:pageMessages />
+      <apex:pageBlockSection >
+          
+          <apex:inputField value="{!opp.type}"/> 
+          <apex:inputField value="{!opp.Product__c}"/>
+          <apex:inputField value="{!opp.Plan__c}"/>
+          
+      </apex:pageBlockSection>
+      <apex:pageBlockButtons >
+      <apex:commandButton value="Upgrade" action="{!updateopp}"/>
+      <apex:commandButton value="Cancel" action="{!cancel}"/>
+      </apex:pageBlockButtons>
+  </apex:pageBlock>
+  <apex:pageBlock id="lead" rendered="{!showlead}">
+      <apex:pageMessages />
+      <apex:pageBlockSection >
+          
+          <apex:selectList id="countries" value="{!l.KA_Product__c}" size="1" required="true">
+          <apex:selectOptions value="{!leadproductoptions}"/>
+          </apex:selectList>
+          
+          
+      </apex:pageBlockSection>
+      <apex:pageBlockButtons >
+      <apex:commandButton value="Upgrade" action="{!updateLead}"/>
+      <apex:commandButton value="Cancel" action="{!cancel}" />
+      </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

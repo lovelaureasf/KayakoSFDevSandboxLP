@@ -1,0 +1,7 @@
+<apex:page standardController="opportunity" extensions="QuoteCreationController">
+  <apex:form >
+      <apex:pageMessages escape="false"/>
+      <center><apex:commandButton value="Proceed" action="{!proceed}" rendered="{!showProceed}"/></center>
+      <center><apex:commandButton value="Go Back" action="{!UrlFor('/')}{!Opportunity.Id}" rendered="{!if(showProceed,false,true)}"/></center>
+  </apex:form>
+</apex:page>

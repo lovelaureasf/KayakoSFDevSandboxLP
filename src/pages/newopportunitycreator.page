@@ -1,0 +1,56 @@
+<!-- Manual opportunity  creation page -->
+<apex:page standardController="opportunity" extensions="ManualOpportunityCreator" id="pg">
+  <script type="text/javaScript">
+      function zeroAmount(){
+          
+         
+          if(document.getElementById('pg:frm:pgBlk:pgBlkSec2:type').value=='Term Change'){
+              var fill = document.getElementById('pg:frm:pgBlk:pgBlkSec3:amount');
+              fill.value = 0;
+              fill.setAttribute('readonly', 'readonly');
+          }else{
+              renderAmount();
+          }
+      }
+  </script>
+  <apex:form id="frm">
+      <apex:actionFunction name="renderAmount" reRender="pg:frm:pgBlk:pgBlkSec3:amount"/>
+      <apex:pageMessages />
+      <apex:pageBlock tabStyle="opportunity" title="New Opportunity" id="pgBlk">
+          
+          <apex:pageBlockSection Title="General Information" collapsible="false" id="pgBlkSec1">
+              
+              <apex:inputField value="{!opportunity.Name}"/>
+              <apex:inputField value="{!opportunity.accountid}" required="true"/>
+              <apex:inputField value="{!opportunity.closedate}"/>
+               <apex:selectList value="{!ownerShipId}" size="1" label="Owner" required="true" rendered="{!csOrRegionLeader}" >
+                  <apex:selectOptions value="{!listofCSMUsers}" ></apex:selectOptions>
+              </apex:selectList>
+              
+              
+          </apex:pageBlockSection>
+          
+          <apex:pageBlockSection title="Product and Business Information" collapsible="false" id="pgBlkSec2">
+              
+              <apex:inputField value="{!opportunity.Type}" required="true" onchange="zeroAmount()" id="type"/>
+              <apex:selectList value="{!territoryId}" size="1" label="Territory" required="true">
+                  <apex:selectOptions value="{!listofTerritories}" ></apex:selectOptions>
+              </apex:selectList>
+              <apex:inputField value="{!opportunity.Product__c}" required="true"/>
+               <apex:inputField value="{!opportunity.Plan__c}" required="true"/>
+              
+          </apex:pageBlockSection>
+          <apex:pageBlockSection title="Revenue Information" collapsible="false" id="pgBlkSec3">
+              <apex:inputField value="{!opportunity.Amount}" required="true" id="amount"/>
+          </apex:pageBlockSection>
+          <apex:pageBlockSection title="More Information" collapsible="false" id="pgBlkSec4">
+              <apex:inputField value="{!opportunity.description}"/>
+          </apex:pageBlockSection>
+          <apex:pageBlockButtons >
+              <apex:commandButton value="Save" action="{!save}"/>
+              <apex:commandButton value="Cancel" action="{!cancel}"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+  </apex:form>
+  
+</apex:page>

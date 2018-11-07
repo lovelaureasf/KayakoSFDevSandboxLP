@@ -1,0 +1,13 @@
+<apex:page controller="InstanceHandlerController">
+  <apex:form >  
+   <apex:pageBlock >
+     <h1> {!actionStatus}</h1> <br/>
+      
+      <apex:outputPanel rendered="{!if(actionStatus == 'Result is Failure',true,false)}">
+      <h1>Reason of Failure is: {!reason}</h1><br/>
+      </apex:outputPanel>
+      <apex:commandButton action="{!goBack}" value="Go Back"/>
+  </apex:pageBlock>
+ </apex:form>
+ 
+</apex:page>

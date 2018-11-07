@@ -1,0 +1,61 @@
+<apex:page standardController="Opportunity" extensions="OpportunityButtonRenderer" docType="html-5.0" >
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; vertical-aligh: top; }
+        .requiredInput, .condRequiredInput { display: inline-block; height: initial !important; }
+        td.dataCol { width: 100%; }
+    </style>
+    <script>
+        function showDuplicateValueSection(ls){
+           
+            if(ls =='Closed Lost: Duplicate'){
+                document.getElementById('{!$Component.markOpportunityLostForm.pgblk.dpanel}').style.visibility = '';
+            }else{
+                document.getElementById('{!$Component.markOpportunityLostForm.pgblk.dpanel}').style.visibility = 'hidden';
+            }
+            
+            if(ls =='Closed Lost: Dead'){
+                document.getElementById('{!$Component.markOpportunityLostForm.pgblk.cpanel}').style.visibility = '';
+            }else{
+                document.getElementById('{!$Component.markOpportunityLostForm.pgblk.cpanel}').style.visibility = 'hidden';
+            }
+        }
+    </script>
+    <apex:form id="markOpportunityLostForm">
+        <apex:pageBlock id="pgblk" >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Mark As Lost" action="{!MarkAsLost}"/>
+            </apex:pageBlockButtons>
+            <apex:outputLabel value="Lost Stage"></apex:outputLabel>
+            <apex:selectList value="{!lostStage}" size="1" required="true" onchange="showDuplicateValueSection(this.options[this.selectedIndex].value)">
+                <apex:selectOptions value="{!lostStageList}"></apex:selectOptions>
+            </apex:selectList><br/><br/>
+            
+           <!-- <apex:outputPanel id="cpanel" style="visibility:hidden">
+            <apex:outputLabel value="Last Contacted At"></apex:outputLabel>
+            <apex:inputField value="{!opportunity.LastContactAt__c}" />  <br/><br/>
+            </apex:outputPanel> -->
+
+            <apex:outputPanel id="dpanel"  style="visibility:hidden" >
+            <apex:outputLabel value="Duplicate Of"  ></apex:outputLabel>
+            <apex:inputField value="{!opportunity.DuplicateOf__c}" />  <br/><br/>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="cpanel" >
+            <apex:outputText value="Competitors"></apex:outputText> 
+            <apex:inputField value="{!opp.Competitors__c}" /><br/><br/>
+            
+            <apex:outputLabel value="Factor for loss" />
+            <apex:selectList value="{!lostReason}" size="1" >
+                <apex:selectOption itemLabel="--None--" itemValue="" ></apex:selectOption>
+                <apex:selectOptions value="{!LostReasonList}"></apex:selectOptions>
+            </apex:selectList><br/><br/>
+            
+            <apex:outputLabel value="Comments ( Why did we loose this Opportunity? What should we do differently next time when dealing with a similar customer? What can we improve to prevent such losses)" />
+            <apex:inputTextarea value="{!lostDetails}"  rows="7" />
+            </apex:outputPanel>
+            
+            
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

@@ -1,0 +1,136 @@
+<apex:page standardController="Lead" extensions="CreateNewLeadController" showHeader="false" sidebar="false" docType="html-5.0"  id="pg">
+    
+    <apex:pageMessages id="msg" ></apex:pageMessages>
+    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    
+    <style>
+        .margin-extra { margin: 50px auto; }
+    </style>
+    
+    <div class="container">
+        <div class="row margin-extra">
+            <div class="col-md-12">
+                <h3>
+                    Create new lead. <small>All fields are required</small>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <apex:form styleClass="form-horizontal">
+                
+                <div class="row"> <!-- Fields for lead -->
+                    <div class="col-md-6">            
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__first_name">First Name</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="1" value="{!Lead.FirstName}" required="true" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__email">Email</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="3" type="email" value="{!Lead.Email}" required="true" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__company">Company</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="5" value="{!Lead.Company}" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__phone">Phone</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="7" value="{!Lead.Phone}" required="true" />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__last_name">Last Name</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="2" value="{!Lead.LastName}" required="true" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__country">Country</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="4" value="{!Lead.CountryCode}" required="true" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__source">Source</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="6" value="{!Lead.LeadSource}" required="true" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__type">Lead Type</apex:outputLabel>
+                            <div class="col-sm-10">
+                                <apex:inputField styleClass="form-control" taborderhint="8" value="{!Lead.LeadType__c}" required="true" />
+                            </div>
+                        </div>
+                        
+                         <div class="form-group">
+                            <apex:outputLabel styleClass="col-sm-2 control-label" for="lead__type">Product</apex:outputLabel>
+                            <div class="col-sm-10">
+                         <apex:selectList title="PickList1" size="1" value="{!lead.KA_Product__c}" styleClass="form-select">
+                                                <apex:selectOptions value="{!PickLstValue}"/>
+                                </apex:selectList>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <center>
+                    <div class="waitingGifDiv" >
+                        
+                        <img src="/img/loading.gif" id="WaitingGif" width="30" height="30" style="float:center-right; "/>       
+                    
+                    </div>
+                    
+                    <div class="SubmitButtonDiv">
+                        
+                        <apex:commandButton id="SubmitButton" styleClass="SubmitButton" value="Save" action="{!save}" reRender="pg"/>
+                        <apex:actionFunction name="finalsave" action="{!finalsave}" id="fs"/>
+                    
+                    </div>    
+                </center> 
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                
+                <script >
+                
+                    j$ = jQuery.noConflict();
+                    j$(document).ready(function() {
+                       //code when page is ready 
+                       j$('.waitingGifDiv').hide();
+                
+                       j$('.SubmitButton').on('click',function() {
+                            
+                            if({!error} == false){
+                               j$('.waitingGifDiv').show();
+                               j$('.SubmitButtonDiv').hide();
+                               finalsave();
+                             }
+                        });
+                    });
+                </script>          
+            
+            </apex:form>
+        
+        </div>
+    </div>
+</apex:page>

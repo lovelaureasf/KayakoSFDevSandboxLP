@@ -1,0 +1,35 @@
+<apex:page standardController="Opportunity" extensions="OpportunityInstanceDetailsController" docType="html-5.0">
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; }
+        .requiredInput, .condRequiredInput { display: inline-block; height: initial !important; }
+        td.dataCol { width: 100%; }
+    </style>
+    <apex:form id="changeEnrichmentForm">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!UpdateInstance}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Answer the questions">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+
+                        <apex:outputLabel value="Expiry Date" />
+                        <apex:inputField value="{!opportunity.KA_ExpiryDate__c}" required="true"/><br /><br/>
+                        
+                        <apex:outputLabel value="Type" />
+                        <apex:inputField value="{!opportunity.Type}" required="true" /><br/><br/>
+                        
+                        <apex:outputLabel value="Product" />
+                        <apex:inputField value="{!opportunity.Product__c}" required="true" /><br/><br/>
+                        
+                        <apex:outputLabel value="Plan" />
+                        <apex:inputField value="{!opportunity.Plan__c}" required="true" /><br/><br/>
+                        
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

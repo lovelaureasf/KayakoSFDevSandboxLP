@@ -1,0 +1,17 @@
+{
+    "projectName": "Kayko",
+    "username": "dev@kayako.com",
+    "id": "a7b4df60-e142-11e8-9116-4fb3103cce94",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://ap.salesforce.com",
+    "workspace": "C:\\Users\\lpanchal\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

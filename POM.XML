@@ -1,0 +1,10 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.kayako.app</groupId>
+  <artifactId>my-Kayako</artifactId>
+  <version>1</version>
+  <properties>
+         <sonar.analysis.mode>preview</sonar.analysis.mode>
+         <sonar.issuesReport.html.enable>true</sonar.issuesReport.html.enable>
+    </properties>
+</project>

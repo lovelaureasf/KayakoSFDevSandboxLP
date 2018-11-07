@@ -1,0 +1,100 @@
+<apex:page standardController="Lead" extensions="ConvertToOpportunityController" docType="html-5.0" id="pg">
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; vertical-aligh: top; }
+        .requiredInput, .condRequiredInput { display: inline-block; height: initial !important; }
+        td.dataCol { width: 100%; }
+        select.listing { width: 140px; height: 200px; overflow: scroll; }
+    </style>
+    
+    <apex:form id="convertToOpportunityForm">
+        <apex:actionFunction action="{!ConvertToOpportunity}" name="go" id="act"/>
+        <apex:pageBlock >
+            <apex:pageMessages escape="false"/>
+            <apex:pageBlockButtons >
+                 
+                <apex:commandButton value="Convert To Opportunity"  onclick="validate();return false;"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Select Opportunity Type" id="opp">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        
+                        Account Peferences 
+                       
+                      
+                         <apex:selectRadio value="{!selectedAccountOption}" layout="pageDirection" onchange="getActive(this.value);">
+                            <apex:selectOption itemValue="Existing Account" itemLabel="Existing Account" />
+                            <apex:selectOption itemValue="New Account" itemLabel="New Account"/>
+                         </apex:selectRadio>
+                       
+                        <div id="accdiv">
+                           
+                            <apex:outputLabel value="Account" id="accountlabel"></apex:outputLabel>
+                            <div class = "requiredInput">
+                            <div class = "requiredBlock"></div>
+                            <apex:inputField value="{!newOpportunity.accountId}" id="accountinput"  />
+                            </div><br/><br/>
+                            
+                        </div>
+                        <apex:outputLabel value="Expected amount" />
+                        <apex:inputField value="{!opportunity.Amount}" required="true" /><br/><br/>
+
+                        <apex:outputLabel value="Opportunity Type" />
+                        <apex:inputField value="{!opportunity.Type}" required="true" /><br/><br/>
+
+                        <apex:outputLabel value="Target Product" />
+                        <apex:inputField value="{!opportunity.Product__c}" required="true" /><br/><br/>
+
+                        <apex:outputLabel value="Target Plan" />
+                        <apex:inputField value="{!opportunity.Plan__c}" required="true" /><br/><br/>
+
+                        <apex:outputLabel value="Expected close date" />
+                        <apex:inputField value="{!opportunity.CloseDate}" required="true" /><br/><br/>
+
+                        <apex:outputLabel value="Competitors" />
+                        <apex:selectList styleClass="listing" multiselect="true" value="{!opportunityCompetitors}">
+                            <apex:selectOptions value="{!allCompetitors}" />
+                        </apex:selectList>    
+                        <br/><br/>
+
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+       
+    </apex:form>  
+    <script type="text/javascript">
+        
+        var accMode = "Existing";
+        
+        function getActive(selectedValue) 
+        {  
+        
+        if( selectedValue == 'Existing Account')
+        {
+        var ele=document.getElementById('accdiv');
+          accMode = "Existing"
+          ele.style.display ="";
+        }else if(selectedValue == 'New Account')
+        {
+             var ele=document.getElementById('accdiv');
+             accMode = "New"          
+          ele.style.display = "none";
+        }
+          
+                
+        } 
+        
+        function validate(){
+            
+            if(accMode =="Existing" && document.getElementById('pg:convertToOpportunityForm:j_id1:opp:j_id30:accountinput').value==""){
+                alert('Please choose an account');
+                
+                
+            }else{
+                
+                go();
+            }
+        }
+    </script>  
+</apex:page>
