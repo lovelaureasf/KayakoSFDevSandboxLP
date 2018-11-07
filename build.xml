@@ -1,4 +1,4 @@
-<project name="Sample usage of Salesforce Ant tasks" default="retrieve" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" default="push" basedir="." xmlns:sf="antlib:com.salesforce">
     <property file="build.properties"/>
     <property environment="env"/>
     <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
@@ -6,11 +6,9 @@
             <pathelement location="ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
-	<target name="retrieve">
-	  <mkdir dir="DirOutput"/>
-	  <sf:retrieve username="${kayakousername.username}" password="${kayakopassword.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="Package.xml"/>
-    </target>
 	<target name="push">
+	 <mkdir dir="DirOutput"/>
+	  <sf:retrieve username="${kayakousername.username}" password="${kayakopassword.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="Package.xml"/>
        <sf:deploy username="${kayakouatusername.tousername}" password="${kayakouatpassword.topassword}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="DirOutput" rollbackOnError="true" />
     </target>
 </project>

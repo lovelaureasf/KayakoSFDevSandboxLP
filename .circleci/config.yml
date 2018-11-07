@@ -6,8 +6,5 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: ant Retrieve
-          command: ant retrieve
-       - run: 
           name: ant push
           command: ant push
