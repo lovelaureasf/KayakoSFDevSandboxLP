@@ -1,0 +1,13 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - checkout
+      - run: 
+          name: ant Retrieve
+          command: ant retrieve
+       - run: 
+          name: ant push
+          command: ant push
