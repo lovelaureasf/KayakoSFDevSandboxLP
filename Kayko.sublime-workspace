@@ -132,11 +132,11 @@
 	"buffers":
 	[
 		{
-			"file": "src/package.xml",
+			"file": "src/pages/Exception.page",
 			"settings":
 			{
-				"buffer_size": 481,
-				"line_ending": "Unix"
+				"buffer_size": 1719,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -176,8 +176,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/lpanchal/Documents/Kayko",
-		"/C/Users/lpanchal/Documents/Kayko/src"
+		"/C/Users/lpanchal/Documents/Kayko"
 	],
 	"file_history":
 	[
@@ -283,25 +282,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/package.xml",
-					"semi_transient": true,
+					"file": "src/pages/Exception.page",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 481,
+						"buffer_size": 1719,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								440,
+								440
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -347,7 +346,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 0.0
+		"height": 126.0
 	},
 	"output.find_results":
 	{
