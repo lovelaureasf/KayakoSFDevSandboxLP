@@ -25,14 +25,13 @@ global class BatchRatePlanUpdater implements Database.Batchable<sObject> {
            MapOfRatePlanNameWithType.put(prp.Name,prp.type__c);    
            
        }
-       
+        System.debug(MapOfRatePlanNameWithType+' MapOfRatePlanNameWithType');
        for(Zuora__SubscriptionProductCharge__c zs: [select id,name,Zuora__UnitOfMeasure__c,Zuora__Subscription__r.id,Zuora__Quantity__c,Zuora__Product__r.Name,Zuora__Product__r.id,Zuora__RatePlanName__c,Zuora__BillingPeriod__c from Zuora__SubscriptionProductCharge__c where Zuora__Subscription__r.id IN:subsids1]){
            
            String rateplanname = zs.Zuora__RatePlanName__c;
-           
+          // system.debug(rateplanname+'====rateplanname');
+           //system.debug(zs.Zuora__Product__r.Name+'====Zuora__Product__r.Name');
            if(rateplanname!=null && rateplanname.contains('OnDemand (Kayako 3 Upgrade)') && zs.Zuora__Product__r.Name == 'Kayako 3 -> 4 OnDemand'){
-                   
-                   
                    if(rateplanname.contains('Case')){
                        rateplanname = 'Case (Kayako 3 Upgrade)';
                    }
@@ -51,11 +50,9 @@ global class BatchRatePlanUpdater implements Database.Batchable<sObject> {
            
            
            }
-           
-           
-               System.debug('the rate plan name is'+rateplanname);
-           
-           if(MapOfRatePlanNameWithType.keySet().contains(rateplanname) && MapOfRatePlanNameWithType.get(rateplanname)=='Primary'){
+           system.debug(rateplanname+'====rateplanname');
+system.debug(MapOfRatePlanNameWithType+'====rateplanname');
+           if(MapOfRatePlanNameWithType.keySet().contains(rateplanname) && MapOfRatePlanNameWithType.get(rateplanname) == 'Primary'){
                if(mapOfSubwithListOfSPC.keySet().contains(zs.Zuora__Subscription__r.id)){
                    mapOfSubwithListOfSPC.get(zs.Zuora__Subscription__r.id).add(zs);
                }else{
@@ -72,7 +69,7 @@ global class BatchRatePlanUpdater implements Database.Batchable<sObject> {
            
            
        }
-       
+       system.debug(mapOfSubwithListOfSPC+'=====mapOfSubwithListOfSPC');
        
        for(Zuora__Subscription__c zs : [select id,name,RatePlan__c,Product_Name__c,ProductName__c,Seats__c from Zuora__Subscription__c where id IN:subsIds]){
            
@@ -87,6 +84,7 @@ global class BatchRatePlanUpdater implements Database.Batchable<sObject> {
            
           if(mapOfSubwithListOfSPC.containsKey(zs.id)){ 
            for(Zuora__SubscriptionProductCharge__c spc: mapOfSubwithListOfSPC.get(zs.id)){
+               system.debug(spc+'====spc====');
                    if(spc.Zuora__Quantity__c!=null && !spc.name.contains('Collaborators')){
                    seats = seats+Integer.valueOf(spc.Zuora__Quantity__c);
                    }

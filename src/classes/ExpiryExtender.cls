@@ -98,7 +98,12 @@ public class ExpiryExtender {
               String version = '5';if(l[0].KA_Product__c == 'Fusion' || l[0].KA_Product__c == 'Case' || l[0].KA_Product__c == 'Engage'){version = '4';}request  = '{"days": "' + daySelected + '", "instance_id": "'+i.Instance_ID__c +'","version":'+'"'+version+'"}'; }else if(o!=null && o.size()>0){request  = '{"days": "' + daySelected + '", "instance_id": "'+i.Instance_ID__c +'"}'; }else{request  = '{"days": "' + daySelected + '", "instance_id": "'+i.Instance_ID__c +'"}'; }
         
        
-        SendRequest(url,request);Instance__c ik = new Instance__c();ik.id = iId;ik.Expiry_Date__c = i.Expiry_Date__c +Integer.valueOf(daySelected);update ik;PageReference pg = new PageReference('/'+iId);return pg;
+        SendRequest(url,request);
+        Instance__c ik = new Instance__c();
+        ik.id = iId;
+        ik.Expiry_Date__c = i.Expiry_Date__c +Integer.valueOf(daySelected);
+        update ik;
+        PageReference pg = new PageReference('/'+iId);return pg;
     
     }
     
@@ -113,8 +118,8 @@ public class ExpiryExtender {
              
             //time stamp is epoch format
             timestamp = DateTime.Now().getTime()/1000;
-           
-            if(zs!=null && zs.size()>0){
+            //Security token check added by sruti
+            if(zs!=null && zs.size()>0 && !string.isblank(zs[0].SecurityToken__c)){
             
             //data is sum of token, timestamp and zuoura id.
             data = zs[0].SecurityToken__c + timestamp + zs[0].Zuora__Zuora_Id__c;
@@ -135,7 +140,11 @@ public class ExpiryExtender {
             content  = '{"subscription_id": "' + zs[0].Zuora__Zuora_Id__c + '"'+',"signature":"'+signature+'","days":'+dayselected+'}';
             
             }
-            
+            else if(zs != null && zs.size() > 0 && string.isblank(zs[0].SecurityToken__c)) {
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Please update token in Zuora Subscription'));
+                
+            }
+            else ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Please update token in Zuora Subscription'));
             
             
             //go hit the server .....

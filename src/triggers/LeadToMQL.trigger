@@ -3,8 +3,12 @@ Description: This trigger updates the Stage In MQL date on lead whenever the lea
 */
 trigger LeadToMQL on Lead (before insert) {
     for(lead l: Trigger.New){
-        if(l.Stage__c=='MQL' && l.Status=='Open'){
-            l.StageToMQLDate__c = Date.Today();
+        try{
+            if(l.Stage__c=='MQL' && l.Status=='Open'){
+                l.StageToMQLDate__c = Date.Today();
+            }
+        }catch(Exception e){
+            
         }
     }
 }

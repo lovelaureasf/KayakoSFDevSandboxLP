@@ -1,6 +1,46 @@
 @isTest
 public class TestInstanceSyncController{
 
+public static testMethod void positiveScenario2(){
+    
+        KayakoAuditorKey__c km = new KayakoAuditorKey__c();
+        km.name = 'tester';
+        km.key__c = 'testing123';
+        insert km;
+        
+        Instance__c i = new Instance__c();
+        i.name = 'test.kayako.com';
+        i.uuid__c = 'y3x-1111-33-444';
+        i.instance_id__c = 2223;
+        i.expiry_date__c = DateTime.now();
+        insert i;
+        
+        Lead l = new Lead();
+        l.company = 'test';
+        l.email = 'test@test.com';
+        l.lastname = 'test';
+        l.ka_product__c = 'test';
+        l.instance__c = i.id;
+        insert l;
+        
+        test.startTest();
+        /*ApexPages.StandardController sc = new ApexPages.StandardController(l);
+        LeadButtonRenderer obj = new LeadButtonRenderer(sc);
+        try{
+        obj.GetCanAcceptOpenLead();
+        obj.GetCanUpgrade();
+        obj.GetCanMarkLeadContacted();
+        obj.reject();
+        obj.GetCanReopenLead();
+        //obj.SeniorRoles();
+        obj.GetCanConvertToContact();
+        obj.convertToContact();
+        }
+        catch(exception e){}*/
+        test.stopTest();
+        
+        }
+
     public static testMethod void positiveScenario(){
     
         KayakoAuditorKey__c km = new KayakoAuditorKey__c();

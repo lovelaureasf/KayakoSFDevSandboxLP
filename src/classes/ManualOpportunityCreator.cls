@@ -5,7 +5,7 @@ public class ManualOpportunityCreator {
     public Boolean csOrRegionLeader{get;set;}
     public String currentRoleName;
     
-     public List<SelectOption> getlistofTerritories(){
+    public List<SelectOption> getlistofTerritories() {
         List<SelectOption> option = new List<SelectOption>();
         for(territory2 t : [select id,name from territory2 where parentTerritory2Id=null AND name!='Renewals Territory Model']){
             
@@ -18,7 +18,7 @@ public class ManualOpportunityCreator {
         return option;
     }
     
-    public List<SelectOption> getlistofCSMUsers(){
+    public List<SelectOption> getlistofCSMUsers() {
         List<SelectOption> option = new List<SelectOption>();
         List<UserRole> csmRoleId = [select id from userRole where name='Account Executive Europe' OR name='Account Executive Americas'];
         
@@ -48,14 +48,14 @@ public class ManualOpportunityCreator {
     }
     
     //overriding the standard save method.
-    public pageReference save(){
+    public pageReference save() {
         //set the stageName as Value Proposition
         opportunity.StageName='Value Proposition';
         opportunity.territory2Id = territoryId;
-        if(csOrRegionLeader){
+        if(csOrRegionLeader) {
             opportunity.OwnerId = ownerShipId;
         }
-        if(opportunity.Type=='Term Change'){
+        if(opportunity.Type=='Term Change') {
             opportunity.Amount = 0;
         }
         insert opportunity;

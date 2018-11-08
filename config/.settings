@@ -1,0 +1,17 @@
+{
+    "projectName": "Kayako Dev",
+    "username": "lovel.panchal@aurea.com.devsandbox",
+    "id": "967bd5e0-e35a-11e8-ac53-5b29525c7ee6",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://cs31.salesforce.com",
+    "workspace": "C:\\Users\\lpanchal\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

@@ -2,9 +2,10 @@
   * ───────────────────────────────────────────────────────────────────────────────────────────────┐
   * Type - Apex Class
   * ────────────────────────────────────────────────────────────────────────────────────────────────
-  * @Object   SF Error Log  This class will be used by all the error handling logic to created
-  *           Error Log Object in salesforce
-  * @Author   Manoj Sankaran
+  * @Object      SF Error Log  
+  * @Description This class will be used by all the error handling logic to created
+  *              Error Log Object in salesforce
+  * @Author      Manoj Sankaran
   * ───────────────────────────────────────────────────────────────────────────────────────────────┘
   * Modification Log
   * 09-20-2018 - Created by Manoj Sankaran

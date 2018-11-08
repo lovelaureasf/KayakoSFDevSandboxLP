@@ -10,9 +10,15 @@ global class BatchUpdateStatusOnLeads implements Database.Batchable<sObject>,Dat
     global Database.QueryLocator start(Database.BatchableContext BC) {
         
         Date date22DaysfromToday = Date.today().addDays(-22);
+        Date  leadCreationDate = date.newInstance(2018, 8, 29);
+
         String query = 'select Id,Name,KA_Product__c,isConverted,Instance__c from Lead where LeadSource != \'Demo Requested\' '+
-                        ' AND LeadSource != \'Webinar\' AND LeadSource != \'Kayako Demo\' '+
-                        ' AND Status!= \'Expired Trial\'  AND Trial_Expiry_Date__c <= :date22DaysfromToday and isConverted = false';
+                        ' AND LeadSource != \'Webinar\' AND LeadSource != \'Kayako Demo\' AND LeadSource != \'Bad Lead\''+
+                        ' AND LeadSource != \'Dead\' AND LeadSource != \'Existing customer\''+
+                        ' and (HasLeadMovedToExpiredTrial__c = null OR HasLeadMovedToExpiredTrial__c = false) '+
+                        ' AND Trial_Expiry_Date__c != null AND isConverted = false ' +
+                        ' AND Status!= \'Expired Trial\'  AND Trial_Expiry_Date__c <= :date22DaysfromToday AND CreatedDate> :leadCreationDate ';
+        system.debug(query+'==Query');
         return Database.getQueryLocator(query);  
     }
     
@@ -28,6 +34,7 @@ global class BatchUpdateStatusOnLeads implements Database.Batchable<sObject>,Dat
             l.Stage__c= 'MQL';
             mapLead.put(l.id,l);
         }
+        system.debug(mapLead + '==== leads getting updated');
         if(!mapLead.isEmpty())  
             update mapLead.values();
     } 

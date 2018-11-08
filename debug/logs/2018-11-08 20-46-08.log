@@ -1,0 +1,58 @@
+44.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<User> usrList = [Select id, name, Start_Time__c, End_Time__c from user where SDR__c=true and isActive=true];
+Execute Anonymous: system.debug('@@ usrlist ' + usrList);
+Execute Anonymous: for(User usr: usrList)
+Execute Anonymous: {
+Execute Anonymous: System.debug('@@@ user : ' + usr.Name);
+Execute Anonymous: DateTime dtStartTime = DateTime.newInstanceGMT(Date.today(), usr.Start_Time__c);
+Execute Anonymous: DateTime dtEndTime = DateTime.newInstanceGMT(Date.today(), usr.End_Time__c);
+Execute Anonymous: system.debug('@@@ start time ' + dtStartTime);
+Execute Anonymous: system.debug('@@@ start time ' + dtEndTime);
+Execute Anonymous: system.debug('@@@ now time ' + system.now().time()); 
+Execute Anonymous: system.debug('@@@ DateTime.now() ' + DateTime.now().dateGmt()); 
+Execute Anonymous: }
+20:46:00.1 (1381408)|USER_INFO|[EXTERNAL]|005p0000001vkCf|gaurav.agarwal.1@aurea.com.devsandbox|India Standard Time|GMT+05:30
+20:46:00.1 (1403308)|EXECUTION_STARTED
+20:46:00.1 (1408544)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+20:46:00.1 (2605073)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT id, name, Start_Time__c, End_Time__c FROM user WHERE (SDR__c = TRUE AND isActive = TRUE)
+20:46:00.1 (7389004)|SOQL_EXECUTE_END|[1]|Rows:4
+20:46:00.1 (7729073)|USER_DEBUG|[2]|DEBUG|@@ usrlist (User:{Id=005p0000002JlWyAAK, Name=Jean Middleton, Start_Time__c=11:00:00.000Z, End_Time__c=02:59:00.000Z}, User:{Id=005p0000002JlTLAA0, Name=Kerryann Tomas, Start_Time__c=03:00:00.000Z, End_Time__c=10:59:00.000Z}, User:{Id=005100000089vjKAAQ, Name=Tannasia Butler, Start_Time__c=07:00:00.000Z, End_Time__c=13:59:00.000Z}, User:{Id=00510000008AOFXAA4, Name=Michael Smith, Start_Time__c=13:00:00.000Z, End_Time__c=04:59:00.000Z})
+20:46:00.1 (8101766)|USER_DEBUG|[5]|DEBUG|@@@ user : Jean Middleton
+20:46:00.1 (8250897)|USER_DEBUG|[8]|DEBUG|@@@ start time 2018-11-08 11:00:00
+20:46:00.1 (8280481)|USER_DEBUG|[9]|DEBUG|@@@ start time 2018-11-08 02:59:00
+20:46:00.1 (8330612)|USER_DEBUG|[10]|DEBUG|@@@ now time 20:46:00.427Z
+20:46:00.1 (8379109)|USER_DEBUG|[11]|DEBUG|@@@ DateTime.now() 2018-11-08 00:00:00
+20:46:00.1 (8411293)|USER_DEBUG|[5]|DEBUG|@@@ user : Kerryann Tomas
+20:46:00.1 (8451485)|USER_DEBUG|[8]|DEBUG|@@@ start time 2018-11-08 03:00:00
+20:46:00.1 (8467107)|USER_DEBUG|[9]|DEBUG|@@@ start time 2018-11-08 10:59:00
+20:46:00.1 (8491736)|USER_DEBUG|[10]|DEBUG|@@@ now time 20:46:00.427Z
+20:46:00.1 (8515228)|USER_DEBUG|[11]|DEBUG|@@@ DateTime.now() 2018-11-08 00:00:00
+20:46:00.1 (8536556)|USER_DEBUG|[5]|DEBUG|@@@ user : Tannasia Butler
+20:46:00.1 (8572495)|USER_DEBUG|[8]|DEBUG|@@@ start time 2018-11-08 07:00:00
+20:46:00.1 (8590343)|USER_DEBUG|[9]|DEBUG|@@@ start time 2018-11-08 13:59:00
+20:46:00.1 (8614143)|USER_DEBUG|[10]|DEBUG|@@@ now time 20:46:00.427Z
+20:46:00.1 (8644484)|USER_DEBUG|[11]|DEBUG|@@@ DateTime.now() 2018-11-08 00:00:00
+20:46:00.1 (8664288)|USER_DEBUG|[5]|DEBUG|@@@ user : Michael Smith
+20:46:00.1 (8699962)|USER_DEBUG|[8]|DEBUG|@@@ start time 2018-11-08 13:00:00
+20:46:00.1 (8714729)|USER_DEBUG|[9]|DEBUG|@@@ start time 2018-11-08 04:59:00
+20:46:00.1 (8742711)|USER_DEBUG|[10]|DEBUG|@@@ now time 20:46:00.427Z
+20:46:00.1 (8768934)|USER_DEBUG|[11]|DEBUG|@@@ DateTime.now() 2018-11-08 00:00:00
+20:46:00.8 (8827973)|CUMULATIVE_LIMIT_USAGE
+20:46:00.8 (8827973)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 4 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:46:00.8 (8827973)|CUMULATIVE_LIMIT_USAGE_END
+
+20:46:00.1 (8869013)|CODE_UNIT_FINISHED|execute_anonymous_apex
+20:46:00.1 (9883976)|EXECUTION_FINISHED

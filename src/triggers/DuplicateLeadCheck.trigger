@@ -1,5 +1,6 @@
 trigger DuplicateLeadCheck on Lead (before insert) {
     
+    try{
     Set<String>existingLeadsEmails = new Set<String>();
     Set<String>IncomingEmailsSet = new Set<String>();
     
@@ -14,8 +15,11 @@ trigger DuplicateLeadCheck on Lead (before insert) {
     for(Lead ln : Trigger.New){
         if(existingLeadsEmails.contains(ln.email)){
             if(!Test.isRunningTest()){
-            ln.addError('Lead with this email already exists.');
+                ln.addError('Lead with this email already exists.');
             }
         }
+    }
+    }Catch(Exception e){
+        SF_LogError.logError(e);
     }
 }

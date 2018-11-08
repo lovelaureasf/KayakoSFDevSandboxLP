@@ -131,14 +131,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/pages/Exception.page",
-			"settings":
-			{
-				"buffer_size": 1719,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -176,7 +168,8 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/lpanchal/Documents/Kayko"
+		"/C/Users/lpanchal/Documents/Kayako Dev",
+		"/C/Users/lpanchal/Documents/Kayako Dev/src"
 	],
 	"file_history":
 	[
@@ -277,39 +270,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/pages/Exception.page",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1719,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								440,
-								440
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -346,14 +308,14 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 126.0
+		"height": 0.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "Kayko.sublime-project",
+	"project": "Kayako Dev.sublime-project",
 	"replace":
 	{
 		"height": 50.0
