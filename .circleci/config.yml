@@ -21,6 +21,6 @@ jobs:
           name: start Sonar server
           command: startsonar 
       - run: 
-          name: start Sonar server
-          command: startsonar 
+          name: start Sonar Scanner
+          command: sonar-runner 
         
