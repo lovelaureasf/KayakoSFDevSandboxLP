@@ -637,8 +637,7 @@
     <members>Instance__c.Status__c</members>
     <members>Instance__c.UUID__c</members>
     <members>KayakoAuditorKey__c.Key__c</members>
-    <members>KayakoMetricsKey__c.Key__c</members>
-    
+    <members>KayakoMetricsKey__c.Key__c</members>    
     <members>Opportunity.Account_Name__c</members>
     <members>Opportunity.All_Agents_with_last_7_days_activity__c</members>
     <members>Opportunity.All_Traffic_Sources__c</members>
@@ -816,53 +815,6 @@
     <members>User.SDR__c</members>
     <members>User.Shift__c</members>
     <members>User.Start_Time__c</members>
-    <members>zqu__ProductRatePlan__c.Type__c</members>
-    <members>zqu__Quote__c.DiscountPercentage__c</members>
-    <members>zqu__Quote__c.InstanceID__c</members>
-    <members>zqu__Quote__c.PrimaryPlan__c</members>
-    <members>zqu__Quote__c.QuoteVal__c</members>
-    <members>zqu__Quote__c.Seat__c</members>
-    <members>zqu__Quote__c.SecurityToken__c</members>
-    <members>zqu__Quote__c.Term__c</members>
-    <members>zqu__Quote__c.Tier1Approver__c</members>
-    <members>zqu__Quote__c.Tier2Approver__c</members>
-    <members>zqu__Quote__c.Tier3Approver__c</members>
-    <members>zqu__Quote__c.ValidVAT__c</members>
-    <members>zqu__ZProduct__c.Family__c</members>
-    <members>zqu__ZProduct__c.Type__c</members>
-    <members>Zuora__CustomerAccount__c.Industry__c</members>
-    <members>Zuora__CustomerAccount__c.Lifetime_Billed_Amount__c</members>
-    <members>Zuora__CustomerAccount__c.OriginalCreationDate__c</members>
-    <members>Zuora__Payment__c.Realised_Payment__c</members>
-    <members>Zuora__Product__c.Family__c</members>
-    <members>Zuora__Product__c.Type__c</members>
-    <members>Zuora__Subscription__c.Account_Id__c</members>
-    <members>Zuora__Subscription__c.Billing_Account_Name__c</members>
-    <members>Zuora__Subscription__c.Bill_to__c</members>
-    <members>Zuora__Subscription__c.CancellationReason__c</members>
-    <members>Zuora__Subscription__c.CMRRWithDiscount__c</members>
-    <members>Zuora__Subscription__c.CSM__c</members>
-    <members>Zuora__Subscription__c.Customers_with_last_30_days_activity__c</members>
-    <members>Zuora__Subscription__c.Domain__c</members>
-    <members>Zuora__Subscription__c.DomainIndexed__c</members>
-    <members>Zuora__Subscription__c.Family__c</members>
-    <members>Zuora__Subscription__c.Instance__c</members>
-    <members>Zuora__Subscription__c.Instance_Expiry_Date__c</members>
-    <members>Zuora__Subscription__c.InstanceID__c</members>
-    <members>Zuora__Subscription__c.Period__c</members>
-    <members>Zuora__Subscription__c.ProductIndexed__c</members>
-    <members>Zuora__Subscription__c.Product_Name__c</members>
-    <members>Zuora__Subscription__c.ProductName__c</members>
-    <members>Zuora__Subscription__c.RatePlan__c</members>
-    <members>Zuora__Subscription__c.RatePlanIndexed__c</members>
-    <members>Zuora__Subscription__c.Sales_Representative__c</members>
-    <members>Zuora__Subscription__c.Seats__c</members>
-    <members>Zuora__Subscription__c.SecurityToken__c</members>
-    <members>Zuora__Subscription__c.Sold_to_Work_Email__c</members>
-    <members>Zuora__Subscription__c.Sync__c</members>
-    <members>Zuora__Subscription__c.TCV__c</members>
-    <members>Zuora__Subscription__c.Type__c</members>
-    <members>Zuora__Subscription__c.VersionCreatedDate__c</members>
 	<members>Lead.Trial_Expiry__c</members>
     <name>CustomField</name>
   </types>

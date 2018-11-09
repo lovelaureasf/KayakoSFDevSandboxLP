@@ -19,7 +19,7 @@ jobs:
           command: export PATH=$PATH:/sonar-runner-2.4/bin 
       - run: 
           name: start Sonar server
-          command: startsonar 
+          command: sonarqube-6.7.5/bin/linux-x86-32/sonar 
       - run: 
           name: start Sonar Scanner
           command: sonar-runner 
