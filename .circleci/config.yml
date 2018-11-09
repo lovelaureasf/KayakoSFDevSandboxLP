@@ -10,19 +10,4 @@ jobs:
           command: ant retrieve
       - run: 
           name: ant push
-          command: ant push      
-      - run: 
-          name: Set Path for  Sonar server
-          command: export PATH=$PATH:/sonarqube-6.7.5/bin/linux-x86-32      
-      - run: 
-          name: Set Path for  Sonar server
-          command: export PATH=$PATH:/sonar-runner-2.4/bin 
-      - run: 
-          name: start Sonar server
-          command:chmod sonarqube-6.7.5/bin/linux-x86-32/sonar.sh
-      - run: 
-          name: start Sonar server
-          command:sonarqube-6.7.5/bin/linux-x86-32/sonar.sh    
-      - run: 
-          name: start Sonar Scanner
-          command: sonar-runner
+          command: ant push
