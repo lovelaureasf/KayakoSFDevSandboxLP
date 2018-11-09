@@ -863,6 +863,7 @@
     <members>Zuora__Subscription__c.TCV__c</members>
     <members>Zuora__Subscription__c.Type__c</members>
     <members>Zuora__Subscription__c.VersionCreatedDate__c</members>
+	<members>Lead.Trial_Expiry__c</members>
     <name>CustomField</name>
   </types>
   <types>
