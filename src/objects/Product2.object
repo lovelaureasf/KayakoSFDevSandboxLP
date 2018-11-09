@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>zqu__GuidedSellingProductFields</fullName>
+        <description>Fields in this field set will be displayed on Guided Selling page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Guided Selling Product Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>zqu__Lookup_Popup_Window</fullName>
+        <description>For Lookup Popup Window on Product Selector page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>zqu__SKU__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Lookup Popup Window</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>zqu__Product_Custom_Fields</fullName>
+        <description>Fields in this field set will be marked as custom fields for synchronizing to Zuora</description>
+        <label>Custom Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DisplayUrl</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalDataSourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing - Seat Expansion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing - Plan Upgrade</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Each</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>zqu__Allow_Feature_Changes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specify if features in the product can be changed when creating QuoteProductFeatures</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If features in the product can be changed when creating QuoteProductFeatures</inlineHelpText>
+        <label>Allow Feature Changes</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>zqu__Catalog_Sync_History__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product link to catalog sync history</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product link to catalog sync history</inlineHelpText>
+        <label>Catalog Sync History</label>
+        <referenceTo>zqu__Catalog_Sync_History__c</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>zqu__Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Base Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add On Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miscellaneous Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>zqu__Deleted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag for soft deletion</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Flag for soft deletion</inlineHelpText>
+        <label>Deleted</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>zqu__EffectiveEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Effective End Date of the Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Effective End Date of the Product.</inlineHelpText>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>zqu__EffectiveStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Effective Start Date of the Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Effective Start Date of the Product.</inlineHelpText>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>zqu__SKU__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The Product SKU.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be auto-generated if no value specified.</inlineHelpText>
+        <label>SKU</label>
+        <length>70</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>zqu__SyncMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Message for the Catalog Sync</description>
+        <externalId>false</externalId>
+        <label>Sync Message</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>zqu__SyncStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sync Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Synced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Updated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Syncing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>zqu__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Standalone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bundle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>zqu__ZuoraId__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The Zuora Id (external primary key) of this Product.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The Zuora Id (external primary key) of this Product.</inlineHelpText>
+        <label>Zuora Id</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>zqu__Mark_for_Delete</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mark for Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)}
+            {!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)}
+
+            var namespaceRecords=sforce.connection.query(&quot;SELECT Name, NamespacePrefix FROM ApexClass where Name = &apos;ProductListViewSyncController&apos;&quot;);
+            var thisNamespace = namespaceRecords.records.NamespacePrefix;
+            var newRecords = [];
+
+            var p = new sforce.SObject(&quot;Product2&quot;);
+            p.Id =&quot;{!Product2.Id}&quot;;
+            if (thisNamespace != undefined &amp;&amp; thisNamespace != &apos;&apos;)
+            p[thisNamespace + &apos;__Deleted__c&apos;]= true;
+            else
+            p[&apos;Deleted__c&apos;] = true;
+
+            newRecords.push(p);
+            var result = sforce.connection.update(newRecords);
+            alert(result);
+            window.location.reload();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>zqu__sync_to_zuora</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Sync to Zuora</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)}
+            {!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)}
+            window.location.href=&apos;/apex/zqu__ProductListViewSync?syncObjectId={!Product2.Id}&amp;stype=Product2&apos;;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>zqu__validate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Validate</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)}
+            {!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)}
+            window.location.href=&apos;/apex/zqu__CatalogStatus?Id={!Product2.Id}&apos;;</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>lntcms__SimilarCases</fullName>
+        <availableFields>
+            <field>ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact.Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>lntcms__EngineeringReqNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Owner.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Account.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact.MasterRecordId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact.Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>lntcms__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>In PossibleDuplicates visualforce page.</description>
+        <displayedFields>
+            <field>CaseNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SimilarCases</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>User didn&apos;t attend training</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non SF issue</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New problem</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No issue found</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Responsible_manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Responsible manager</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yaroslav Lazoryk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Andrii Boiko</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Serhii Riabtsev</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ganna Chos</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sagar Pareek</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaurav Agarwal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kanika Dua</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Krishnadas Ramaswamy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paweł Marszałek</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Amit Jindal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jon Chevalier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Responsible_manager_s_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( INCLUDES(Responsible_manager__c , &quot;Andrii Boiko&quot;), &quot;andrii.boiko@aurea.com; &quot;,&quot;&quot;) 
+&amp;
+IF( INCLUDES(Responsible_manager__c , &quot;Ganna Chos&quot;) , &quot;ganna.chos@aurea.com; &quot;, &quot;&quot;)
+&amp;
+IF( INCLUDES(Responsible_manager__c , &quot;Yaroslav Lazoryk&quot;), &quot;yaroslav.lazoryk@aurea.com; &quot;, &quot;&quot;)  
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Jon Chevalier&quot;), &quot;jon.chevalier@aurea.com; &quot;, &quot;&quot;)
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Sagar Pareek&quot;), &quot;sagar.pareek@aurea.com; &quot;, &quot;&quot;)
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Paweł Marszałek&quot;), &quot;pawel.marszalek@aurea.com; &quot;, &quot;&quot;)
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Krishnadas Ramaswamy&quot;), &quot;krishnadas.ramaswamy@aurea.com; &quot;, &quot;&quot;)
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Gaurav Agarwal&quot;), &quot;gaurav.agarwal.1@aurea.com; &quot;, &quot;&quot;)
+&amp; 
+IF( INCLUDES(Responsible_manager__c , &quot;Kanika Dua&quot;), &quot;kanika.dua@aurea.com; &quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Responsible manager&apos;s email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In progress</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clarification</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User acceptance</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non SF issue</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed as Duplicate</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Problem</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Feature Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Browser__c</fullName>
+        <externalId>false</externalId>
+        <label>Browser</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Device__c</fullName>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Google Analytics Client ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( (&quot;https://analytics.google.com/analytics/web/#report/visitors-user-activity/a72840801w110617423p115383936/%3F_r.userId%3D&quot; &amp; gaconnector_Google_Analytics_Client_ID__c &amp; &quot;%26_r.userListReportStates%3D%26_r.userListReportId%3Dvisitors-legacy-user-id/&quot;), &quot;Open in Google Analytics&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Google Analytics Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_IP_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Latitude_from_IP__c</fullName>
+        <externalId>false</externalId>
+        <label>Latitude (from IP)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Location_approx__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://maps.google.com/maps?q=loc:&quot; &amp; TEXT( gaconnector_Latitude_from_IP__c ) &amp; &quot;,&quot; &amp; TEXT( gaconnector_Longitude__c ), &quot;Open in Google Maps&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location (approx.)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Longitude</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>9</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Number_of_Website_Visits__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Website Visits</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Operating_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating System</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Pages_visited__c</fullName>
+        <externalId>false</externalId>
+        <label>Pages visited</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent on Website</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website_formul__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ROUND(gaconnector_Time_Spent_on_Website__c / 60000,0)) &amp; &quot;:&quot; &amp; 
+TEXT(MOD(ROUND(	gaconnector_Time_Spent_on_Website__c / 1000,0), 60))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Spent on Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lntcms__EngineeringReqNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Engineering Req Number</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>lntcms__Product__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <picklist>
+            <picklistValues>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) of the Contact/Account associated with the Case in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Local_Time_24_Short__c, Account.tz__Local_Time_24_Short__c)</formula>
+        <inlineHelpText>Shows the local time (without date) of the Contact/Account associated with the Case in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time of the Contact/Account associated with the Case in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Local_Time_24__c, Account.tz__Local_Time_24__c)</formula>
+        <inlineHelpText>Shows the local time of the Contact/Account associated with the Case in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) of the Contact/Account associated with the Case.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Local_Time_Short__c, Account.tz__Local_Time_Short__c)</formula>
+        <inlineHelpText>Shows the local time (without date) of the Contact/Account associated with the Case.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time of the Contact/Account associated with the Case.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Local_Time__c, Account.tz__Local_Time__c)</formula>
+        <inlineHelpText>Shows the local time of the Contact/Account associated with the Case.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..) of the Contact/Account associated with the Case.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Timezone__c, Account.tz__Timezone__c)</formula>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..) of the Contact/Account associated with the Case.</inlineHelpText>
+        <label>Timezone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name of the Contact/Account associated with the Case.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__Timezone_Full__c, Account.tz__Timezone_Full__c)</formula>
+        <inlineHelpText>Full timezone name of the Contact/Account associated with the Case.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTC_Offset_Formula__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current UTC timezone offset of the Contact/Account associated with the Case.</description>
+        <externalId>false</externalId>
+        <formula>IF(Contact.tz__Timezone__c != null, Contact.tz__UTF_Offset__c, Account.tz__UTF_Offset__c)</formula>
+        <inlineHelpText>Shows the UTC timezone offset of the Contact/Account associated with the Case.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Responsible_manager__c</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.EMAIL</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <webLinks>
+        <fullName>lntcms__Find_Duplicates</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Find Duplicates</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/lntcms__DuplicateCases?id={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Case_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Case Page Layout. Displays the local time for the current record.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;https://success-software.biz/localtime/js/json3.min.js&quot;)} 
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+	tbutton=document.getElementsByName(sObject);
+
+	if(sOffset == &apos;N/A&apos;) {
+		for(i=0;i&lt;tbutton.length;i++) {
+			tbutton[i].value=&apos;Unknown&apos;;
+		}
+	}
+	else {
+		var args1={offset:sOffset};
+		cttime=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getLocalTimeString&quot;,args1);
+		for(i=0;i&lt;tbutton.length;i++) {
+			tbutton[i].value=cttime +  &quot; &quot; + sEnd;
+		}
+	}
+
+	self.status=tbutton[0].value;
+	setTimeout(&apos;tbutton[0].click();&apos;,sFrequency);
+}
+
+onError=null;
+
+if(typeof sOffset==&apos;undefined&apos;) {
+	sOffset=&apos;N/A&apos;;
+	sEnd=&apos;N/A&apos;;
+
+	try {
+		if(&quot;{!Contact.Id}&quot; != &quot;&quot;) {
+			var args={objId:&quot;{!JSENCODE(Contact.Id)}&quot;};
+			var jsontext=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;FindLocalTime&quot;,args);
+			if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+				var lt=JSON.parse(jsontext);
+				sOffset=lt.offset;
+				sEnd=lt.abbreviation;
+			}
+		}
+
+		if(sOffset == &apos;N/A&apos; &amp;&amp; &quot;{!Account.Id}&quot; != &quot;&quot;) {
+			var args={objId:&quot;{!JSENCODE(Account.Id)}&quot;}; 
+			var jsontext=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;FindLocalTime&quot;,args);
+			if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+				var lt=JSON.parse(jsontext);
+				sOffset=lt.offset;
+				sEnd=lt.abbreviation;
+			}
+		}
+		if(&quot;{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}&quot; == &quot;false&quot;) sEnd = &apos;&apos;; 
+	} catch(err) {alert(err);}
+}
+
+if(typeof freq==&apos;undefined&apos;) {
+	freq=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getFrequency&quot;,{});
+}
+
+calcTime(sOffset,freq,sEnd,&quot;tz__local_time_case_btn&quot;);</url>
+    </webLinks>
+</CustomObject>

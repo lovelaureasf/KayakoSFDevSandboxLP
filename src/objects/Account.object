@@ -1,0 +1,2346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fieldSets>
+        <fullName>zqu__CustomAccountFields</fullName>
+        <description>Fields in this field set will be included in the account data when quotes for new billing accounts are sent to z-billing.</description>
+        <displayedFields>
+            <field>SecurityToken__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Custom Account Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>zqu__Fields_For_Select_Billing_Account</fullName>
+        <availableFields>
+            <field>AccountSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>AnnualRevenue</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Rating</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Sic</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SicDesc</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Fields in this field set will be displayed in the list of Select Billing Account Component</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Account Fields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>zqu__Lookup_Popup_Window</fullName>
+        <description>Fields in this field set will be displayed in the list of lookup component.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Lookup Popup Window</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>&quot;Powered By Kayako&quot;</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Channel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Content Wall</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Meetup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ENT K4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google (Organic)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kayako Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Search Engine (Organic)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Review Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self Generated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social (Advertising)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandoned Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>All_Traffic_Sources__c</fullName>
+        <externalId>false</externalId>
+        <label>All Traffic Sources</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CID__c</fullName>
+        <externalId>false</externalId>
+        <label>GA Client ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CMRRWithDiscount__c</fullName>
+        <externalId>false</externalId>
+        <label>CMRR With Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CMRR__c</fullName>
+        <description>It pulls the value from the Billing Account.</description>
+        <externalId>false</externalId>
+        <label>CMRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CSM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>It gives the option to choose the name of CSM who has worked on that account.</description>
+        <externalId>false</externalId>
+        <label>CSM</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.UserRole.Name</field>
+                <operation>equals</operation>
+                <value>Customer Success Manager</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <description>It pulls the currency details from the billing account.</description>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DND__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This stops email drip on Opportunity associated with that Account. If any account is set to DND it will show a message on the top saying this account is in DND mode.</description>
+        <externalId>false</externalId>
+        <label>DND</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Domain__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription__r.DomainIndexed__c</formula>
+        <label>Domain</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expiry_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription__r.Instance_Expiry_Date__c</formula>
+        <label>Expiry Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GA_Client_ID_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>gaconnector_Google_Analytics_Client_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GA Client ID (Formula)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HubSpot_Inc__Sync_From_HubSpot__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is for HubSpot use only</description>
+        <externalId>false</externalId>
+        <label>Sync From HubSpot</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Academics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsExcludedFromRealign</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>KA_Domain__c</fullName>
+        <externalId>false</externalId>
+        <label>Domain (Deprecated)</label>
+        <length>253</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LifeTimeBilledAmount__c</fullName>
+        <externalId>false</externalId>
+        <label>Lifetime Billed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lifetime_Billed_Amount__c</fullName>
+        <description>Total payment received from the customer.</description>
+        <externalId>false</externalId>
+        <label>Lifetime Billed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Lifetime_Billed_Amount_rollup__c</fullName>
+        <externalId>false</externalId>
+        <label>Lifetime Billed Amount</label>
+        <summarizedField>Zuora__CustomerAccount__c.Lifetime_Billed_Amount__c</summarizedField>
+        <summaryForeignKey>Zuora__CustomerAccount__c.Zuora__Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NetNextChargeAmount__c</fullName>
+        <description>This field shows the amount customer will be charged next.</description>
+        <externalId>false</externalId>
+        <label>Net Next Charge Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Original_Promo_Code__c</fullName>
+        <description>DO NOT CHANGE OR EDIT THIS FIELD! Original Promotional Code from initial lead creation for Marketing purposes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DO NOT CHANGE OR EDIT THIS FIELD! Original Promotional Code from initial lead creation for Marketing purposes</inlineHelpText>
+        <label>Original Promo Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Term__c</fullName>
+        <description>It pulls the value from the Invoices Section.</description>
+        <externalId>false</externalId>
+        <label>Payment Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription__r.Product_Name__r.Name</formula>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_Plan__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription__r.RatePlanIndexed__c</formula>
+        <label>Rate Plan</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Remove_from_Autopilot__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Remove from Autopilot</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Seats__c</fullName>
+        <externalId>false</externalId>
+        <label>Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SecurityToken__c</fullName>
+        <externalId>false</externalId>
+        <label>Security Token</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Due</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Subscription Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subscription__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Subscription</label>
+        <referenceTo>Zuora__Subscription__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Closed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Closed Amount</label>
+        <summarizedField>Opportunity.Amount</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Beta</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Zuora__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zuora__CustomerPriority__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Customer Priority</label>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zuora__NumberofLocations__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Locations</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zuora__SLAExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Zuora__SLASerialNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Serial Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zuora__SLA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zuora__UpsellOpportunity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Upsell Opportunity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>adroll__ClickConversion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Conversion Rate For Clicks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Conversion Rate For Clicks</inlineHelpText>
+        <label>Click Conversion (Deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>adroll__ClickCosts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Costs Incurred for the Clicks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Costs Incurred for the Clicks</inlineHelpText>
+        <label>Account Click Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>adroll__Click_Conversion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>adroll__ClickConversion__c*100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Click Conversion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__Clicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Clicks for the Email Address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Clicks for the Email Address</inlineHelpText>
+        <label>Account Clicks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__ImpressionCosts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Costs Incurred for the Impressions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Costs Incurred for the Impressions</inlineHelpText>
+        <label>Account Impression Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>adroll__Impressions_External_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Impressions External ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__Impressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Impressions for the user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Impressions for the user</inlineHelpText>
+        <label>Account Impressions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__LastAdRollTrackingDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Latest Date of the Tracking Data Occurrence</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest Date of the Tracking Data Occurrence</inlineHelpText>
+        <label>Account Last RollWorks Tracking Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>adroll__ViewConversion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Conversion Rate for Views</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Conversion Rate for Views</inlineHelpText>
+        <label>View Conversion (Deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>adroll__View_Conversion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>adroll__ViewConversion__c*100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account View Conversion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Browser__c</fullName>
+        <externalId>false</externalId>
+        <label>Browser</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Device__c</fullName>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Google Analytics Client ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( (&quot;https://analytics.google.com/analytics/web/#report/visitors-user-activity/a72840801w110617423p115383936/%3F_r.userId%3D&quot; &amp; CID__c &amp; &quot;%26_r.userListReportStates%3D%26_r.userListReportId%3Dvisitors-legacy-user-id/&quot;), &quot;Open in Google Analytics&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Google Analytics Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_IP_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Latitude_from_IP__c</fullName>
+        <externalId>false</externalId>
+        <label>Latitude</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Location_approx__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://maps.google.com/maps?q=loc:&quot; &amp;  gaconnector_Latitude_from_IP__c  &amp; &quot;,&quot; &amp; (gaconnector_Longitude__c), &quot;Open in Google Maps&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location (approx.)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Longitude</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Number_of_Website_Visits__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Website Visits</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Operating_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating System</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Pages_visited__c</fullName>
+        <externalId>false</externalId>
+        <label>Pages visited</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent on Website</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website_formul__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ROUND(gaconnector_Time_Spent_on_Website__c / 60000,0)) &amp; &quot;:&quot; &amp; 
+TEXT(MOD(ROUND(gaconnector_Time_Spent_on_Website__c / 1000,0), 60))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Spent on Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score [1-4]</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score [0-100]</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Updated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score Last Updated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>infer3__Encoded_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>RPAD(&apos;4&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_3_Threshold__c,&apos;4&apos;)+RPAD(&apos;3&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_2_Threshold__c-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_3_Threshold__c,&apos;3&apos;)+RPAD(&apos;2&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_1_Threshold__c-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_2_Threshold__c,&apos;2&apos;)+RPAD(&apos;1&apos;,101-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_1_Threshold__c,&apos;1&apos;)</formula>
+        <label>Infer Encoded Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Personas__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Profiles</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Profiles_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Profiles (Short)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/255),0,infer3__Score_Object_ID__r.infer3__Rating_0__c,1,infer3__Score_Object_ID__r.infer3__Rating_1__c,2,infer3__Score_Object_ID__r.infer3__Rating_2__c,3,infer3__Score_Object_ID__r.infer3__Rating_3__c,4,infer3__Score_Object_ID__r.infer3__Rating_4__c,5,infer3__Score_Object_ID__r.infer3__Rating_5__c,6,infer3__Score_Object_ID__r.infer3__Rating_6__c,null),1+MOD(infer3__Score_Index__c,255),1),&apos;^&apos;,&apos; &apos;))</formula>
+        <label>Infer: Fit Score</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>VALUE(TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/85),0,infer3__Score_Object_ID__r.infer3__Score_0__c,1,infer3__Score_Object_ID__r.infer3__Score_1__c,2,infer3__Score_Object_ID__r.infer3__Score_2__c,3,infer3__Score_Object_ID__r.infer3__Score_3__c,4,infer3__Score_Object_ID__r.infer3__Score_4__c,5,infer3__Score_Object_ID__r.infer3__Score_5__c,6,infer3__Score_Object_ID__r.infer3__Score_6__c,7,infer3__Score_Object_ID__r.infer3__Score_7__c,8,infer3__Score_Object_ID__r.infer3__Score_8__c,9,infer3__Score_Object_ID__r.infer3__Score_9__c,10,infer3__Score_Object_ID__r.infer3__Score_10__c,11,infer3__Score_Object_ID__r.infer3__Score_11__c,12,infer3__Score_Object_ID__r.infer3__Score_12__c,13,infer3__Score_Object_ID__r.infer3__Score_13__c,14,infer3__Score_Object_ID__r.infer3__Score_14__c,15,infer3__Score_Object_ID__r.infer3__Score_15__c,16,infer3__Score_Object_ID__r.infer3__Score_16__c,17,infer3__Score_Object_ID__r.infer3__Score_17__c,18,infer3__Score_Object_ID__r.infer3__Score_18__c,null),1+3*MOD(infer3__Score_Index__c,85),3),&apos;^&apos;,&apos; &apos;)))</formula>
+        <label>Infer: Fit Score [0-100]</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Num_Contacts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Number of Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Num_Engaged_Contacts__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Number of Engaged Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Num_Engaged_Entities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>infer3__Num_Engaged_Contacts__c +  infer3__Num_Engaged_Leads__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Infer: Number of Engaged Entities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Num_Engaged_Leads__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Number of Engaged Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Num_Leads__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Number of Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Number_Entities__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>infer3__Num_Contacts__c +  infer3__Num_Leads__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Infer: Number of Entities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Index__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Score Index</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Object_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Score Object ID</label>
+        <referenceTo>infer3__Score_Object__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Account_Score_Object</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Snapshot__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A saved copy of the score, if the &quot;Update Account with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&apos;t track formula fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A saved copy of the score, if the &quot;Update Account with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&apos;t track formula fields.</inlineHelpText>
+        <label>Infer Score Snapshot NOT FOR LAYOUT</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__behavioral_evaluation_score__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The score of the Account at the time the last Opportunity was created, or if no opportunities were created, the current behavior score.</description>
+        <externalId>false</externalId>
+        <label>Infer: Behavioral Evaluation Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_signals__Infer_Smart_Signals_Record__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Smart Signals Record</label>
+        <referenceTo>infer_signals__Infer_Smart_Signals_Record__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_city__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_5__c</formula>
+        <label>Infer: City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_company_size__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_1__c</formula>
+        <label>Infer: Company Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_competitors__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_29__c</formula>
+        <label>Infer: Competitors</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_country__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_10__c</formula>
+        <label>Infer: Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_email_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_7__c</formula>
+        <label>Infer: Email Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_eloqua__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_25__c</formula>
+        <label>Infer: Has Eloqua</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_hubspot__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_28__c</formula>
+        <label>Infer: Has Hubspot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_marketo__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_26__c</formula>
+        <label>Infer: Has Marketo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_pardot__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_27__c</formula>
+        <label>Infer: Has Pardot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_ssl__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_18__c</formula>
+        <label>Infer: Has SSL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_3__c</formula>
+        <label>Infer: Revenue</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_sector__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_4__c</formula>
+        <label>Infer: Sector</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_state__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_12__c</formula>
+        <label>Infer: State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_uses_aws__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_19__c</formula>
+        <label>Infer: Uses AWS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_website_rank__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_6__c</formula>
+        <label>Infer: Website Rank</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_8__c</formula>
+        <label>Infer: Zip Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>leadfeederapp__LatestWebsiteVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Latest Leadfeeder Visit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>leadfeederapp__LeadfeederLink__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>View in Leadfeeder</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>tz__LT_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
+        <label>LT Info</label>
+        <length>300</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Account in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Account in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Account in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; &quot;/&quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; &quot;/&quot; &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; &quot; &quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time for the Account in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Account.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, 	tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Account.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Account.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; &quot;/&quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; &quot;/&quot; &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; &quot; &quot; &amp;
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;) 
+)</formula>
+        <inlineHelpText>Shows the local time for the Account.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full timezone name.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_IANA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone as defined by Internet Assigned Numbers Authority (IANA).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone as defined by Internet Assigned Numbers Authority (IANA).</inlineHelpText>
+        <label>Timezone (IANA)</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTF_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current UTC timezone offset of the Account. Uses the Billing address, and in its absence the Phone number field in the calculation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Account.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyAccounts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Backend_Ownership_Change</fullName>
+        <active>false</active>
+        <errorConditionFormula>NOT ( PRIORVALUE(OwnerId) == &quot;00510000003Kv6B&quot;) &amp;&amp; ISCHANGED(OwnerId) &amp;&amp; NOT( ISNEW() )</errorConditionFormula>
+        <errorMessage>You cannot change ownership of this record.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Support_cannot_change_name</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Name!=  PRIORVALUE(Name), $Profile.Name ==&quot;Read Only - Custom&quot; )</errorConditionFormula>
+        <errorMessage>You cannot change account name</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Zuora__Sync_Data_from_ZBilling</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Sync Data from ZBilling</masterLabel>
+        <openType>noSidebar</openType>
+        <page>Zuora__AccountOnDemandSync</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Act_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Account Page Layout. Displays the local time for the current record. The Billing Country, Billing State, and Billing City fields need to be properly filled in order for this button to function properly. Else the value &quot;Unknown&quot; is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;https://success-software.biz/localtime/js/json3.min.js&quot;)}
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == &apos;N/A&apos;) {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=&apos;Unknown&apos;;
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getLocalTimeString&quot;,args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  &quot; &quot; + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout(&apos;tbutton[0].click();&apos;,sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset==&apos;undefined&apos;) {
+sOffset=&apos;N/A&apos;;
+sEnd=&apos;N/A&apos;;
+
+try {
+var args={objId:&quot;{!JSENCODE(Account.Id)}&quot;};
+var jsontext=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;FindLocalTime&quot;,args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if(&quot;{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}&quot; == &quot;false&quot;) sEnd = &apos;&apos;; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq==&apos;undefined&apos;) {
+freq=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getFrequency&quot;,{});
+}
+
+calcTime(sOffset,freq,sEnd,&quot;tz__local_time_act_btn&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>zqu__New_Quote</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Quote</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var pageURL = window.location.hostname; 
+window.open(&apos;https://&apos; + pageURL + &apos;/apex/zqu__quoteoption?crmAccountId={!Account.Id}&amp;retUrl=/{!Account.Id}&apos;, &apos;_self&apos;);</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,2233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fieldSets>
+        <fullName>zqu__Compare_Contact_Details</fullName>
+        <description>Used to compare a quote&apos;s contacts on the Update Zuora Account Information page.</description>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>zqu__County__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>MailingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Contact Details</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>zqu__Lookup_Popup_Window</fullName>
+        <availableFields>
+            <field>AssistantName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>AssistantPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Birthdate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Department</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>DoNotCall</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>EmailBouncedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>EmailBouncedReason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>HasOptedOutOfEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>HasOptedOutOfFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>HomePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Jigsaw</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>JigsawContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastCURequestDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastCUUpdateDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LeadSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MailingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MailingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MailingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MailingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MailingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MasterRecordId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>MobilePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OtherStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ReportsToId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Salutation</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>For Lookup Popup Window</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account.ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Lookup Popup Window</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>All_Traffic_Sources__c</fullName>
+        <externalId>false</externalId>
+        <label>All Traffic Sources</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Device__c</fullName>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GA_Client_ID_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>gaconnector_Google_Analytics_Client_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GA Client ID (Formula)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HubSpot_Inc__HubSpot_Intelligence__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>HubSpot Intelligence</label>
+        <referenceTo>HubSpot_Inc__HubSpot_Intelligence__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HubSpot_Inc__SICCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SIC Code</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>&quot;Powered By Kayako&quot;</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Channel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Content Wall</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Meetup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ENT K4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google (Organic)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kayako Demo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Migration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Search Engine (Organic)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outbound</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Review Sites</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self Generated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social (Advertising)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Abandoned Cart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Original_Promo_Code__c</fullName>
+        <description>DO NOT CHANGE OR EDIT THIS FIELD! Original Promotional Code from initial lead creation for Marketing purposes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DO NOT CHANGE OR EDIT THIS FIELD! Original Promotional Code from initial lead creation for Marketing purposes</inlineHelpText>
+        <label>Original Promo Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Remove_from_Autopilot__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Remove from Autopilot</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>adroll__ClickConversion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Conversion Rate For Clicks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Conversion Rate For Clicks</inlineHelpText>
+        <label>Click Conversion (Deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>adroll__ClickCosts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Costs Incurred for the Clicks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Costs Incurred for the Clicks</inlineHelpText>
+        <label>Contact Click Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>adroll__Click_Conversion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>adroll__ClickConversion__c*100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Click Conversion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__Clicks__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Clicks for the Email Address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Clicks for the Email Address</inlineHelpText>
+        <label>Contact Clicks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__ImpressionCosts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Costs Incurred for the Impressions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Costs Incurred for the Impressions</inlineHelpText>
+        <label>Contact Impression Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>adroll__Impressions_External_ID__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Impressions External ID mirrors Impressions__c field, this field is only used for data purposes, it should not be added to any page layouts or reports.</description>
+        <externalId>true</externalId>
+        <label>Impressions External ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__Impressions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Impressions for the user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of Impressions for the user</inlineHelpText>
+        <label>Contact Impressions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>adroll__LastAdRollTrackingDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Latest Date of the Tracking Data Occurrence</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Latest Date of the Tracking Data Occurrence</inlineHelpText>
+        <label>Contact Last RollWorks Tracking Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>adroll__ViewConversion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Conversion Rate for Views</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Conversion Rate for Views</inlineHelpText>
+        <label>View Conversion (Deprecated)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>adroll__View_Conversion__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>adroll__ViewConversion__c*100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact View Conversion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__GA_Campaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_campaign variable from Google Analytics Campaign URLs: The individual campaign name, slogan, promo code, etc. for a product. Mapped from the Lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_campaign variable from Google Analytics Campaign URLs: The individual campaign name, slogan, promo code, etc. for a product. Mapped from the Lead custom field.</inlineHelpText>
+        <label>First UTM Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__GA_Content__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_content variable from Google Analytics Campaign URLs: Used to differentiate similar content, or links within the same ad. For example, if you have two call-to-action links within the same email message, you can use utm_content and set different values for each so you can tell which version is more effective. Mapped from the lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_content variable from Google Analytics Campaign URLs: Used to differentiate similar content, or links within the same ad.</inlineHelpText>
+        <label>First UTM Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__GA_Medium__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_medium variable from Google Analytics Campaign URLs: The advertising or marketing medium, e.g.: cpc, banner, email newsletter. Mapped from the lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_medium variable from Google Analytics Campaign URLs: The advertising or marketing medium, e.g.: cpc, banner, email newsletter. Mapped from the lead custom field.</inlineHelpText>
+        <label>First UTM Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__GA_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_source variable from Google Analytics Campaign URLs: Identify the advertiser, site, publication, etc. that is sending traffic to your property, e.g. google, citysearch, newsletter4, billboard. Mapped from lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_source variable from Google Analytics Campaign URLs: Identify the advertiser, site, publication, etc. that is sending traffic to your property, e.g. google, citysearch, newsletter4, billboard. Mapped from lead custom field.</inlineHelpText>
+        <label>First UTM Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__GA_Term__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_term variable from Google Analytics Campaign URLs: Identify paid search keywords. If you&apos;re manually tagging paid keyword campaigns, you should also use utm_term to specify the keyword. Mapped from lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_term variable from Google Analytics Campaign URLs: Identify paid search keywords. If you&apos;re manually tagging paid keyword campaigns, you should also use utm_term to specify the keyword. Mapped from lead custom field.</inlineHelpText>
+        <label>First UTM Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Initial_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field tracks the Contact initial referral source from the session history data.</description>
+        <externalId>false</externalId>
+        <label>Initial Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Keyword__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search term that sent a visitor to your web site prior to them submitting a web-to-lead form. &apos;Not Provided&apos; means the keyword cannot be determined, usually due to Google encrypting searches from logged in Google users.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The search term that sent a visitor to your web site prior to them submitting a web-to-lead form. &apos;Not Provided&apos; means the keyword cannot be determined, usually due to Google encrypting searches from logged in Google users.</inlineHelpText>
+        <label>First Keyword</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_Keyword__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search term that sent a visitor to your web site prior to them submitting a web-to-lead form. &apos;Not Provided&apos; means the keyword cannot be determined, usually due to Google encrypting searches from logged in Google users.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The search term that sent a visitor to your web site prior to them submitting a web-to-lead form. &apos;Not Provided&apos; means the keyword cannot be determined, usually due to Google encrypting searches from logged in Google users.</inlineHelpText>
+        <label>Last Keyword</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_Lead_Source_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Categorizes the type of source that sent a user to your web site. Campaign=utm tagged URL, Direct=Typed in, Organic=non-ad search, Referral=link from another site.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Categorizes the type of source that sent a user to your web site. Campaign=utm tagged URL, Direct=Typed in, Organic=non-ad search, Referral=link from another site.</inlineHelpText>
+        <label>Last Lead Source Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_Paid_Search__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this is checked, it means that the click that sent a visitor to your web site prior to them submitting a web-to-lead form was on an advertisement (Adwords, Microsoft AdCenter, etc.). Unchecked means they clicked on an organic search result.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, it means that the click that sent a visitor to your web site prior to them submitting a web-to-lead form was on an advertisement (Adwords, Microsoft AdCenter, etc.). Unchecked means they clicked on an organic search result.</inlineHelpText>
+        <label>Last Paid Search</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_Referrer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Referring URL that a visitor came from to arrive on your web site, prior to submitting a web-to-lead form.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Referring URL that a visitor came from to arrive on your web site, prior to submitting a web-to-lead form.</inlineHelpText>
+        <label>Last Referrer</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_Search_Engine__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search engine that a visitor used to find your site, prior to submitting the web-to-lead form.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The search engine that a visitor used to find your site, prior to submitting the web-to-lead form.</inlineHelpText>
+        <label>Last Search Engine</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_UTM_Campaign__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_campaign variable from Google Analytics Campaign URLs: The individual campaign name, slogan, promo code, etc. for a product. Mapped from the Lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_campaign variable from Google Analytics Campaign URLs: The individual campaign name, slogan, promo code, etc. for a product. Mapped from the Lead custom field.</inlineHelpText>
+        <label>Last UTM Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_UTM_Content__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_content variable from Google Analytics Campaign URLs: Used to differentiate similar content, or links within the same ad. For example, if you have two call-to-action links within the same email message, you can use utm_content and set different values for each so you can tell which version is more effective.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_content variable from Google Analytics Campaign URLs: Used to differentiate similar content, or links within the same ad.</inlineHelpText>
+        <label>Last UTM Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_UTM_Medium__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_medium variable from Google Analytics Campaign URLs: The advertising or marketing medium, e.g.: cpc, banner, email newsletter. Mapped from the lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_medium variable from Google Analytics Campaign URLs: The advertising or marketing medium, e.g.: cpc, banner, email newsletter. Mapped from the lead custom field.</inlineHelpText>
+        <label>Last UTM Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_UTM_Source__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_source variable from Google Analytics Campaign URLs: Identify the advertiser, site, publication, etc. that is sending traffic to your property, e.g. google, citysearch, newsletter4, billboard. Mapped from lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_source variable from Google Analytics Campaign URLs: Identify the advertiser, site, publication, etc. that is sending traffic to your property, e.g. google, citysearch, newsletter4, billboard. Mapped from lead custom field.</inlineHelpText>
+        <label>Last UTM Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_UTM_Term__c</fullName>
+        <deprecated>false</deprecated>
+        <description>utm_term variable from Google Analytics Campaign URLs: Identify paid search keywords. If you&apos;re manually tagging paid keyword campaigns, you should also use utm_term to specify the keyword. Mapped from lead custom field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>utm_term variable from Google Analytics Campaign URLs: Identify paid search keywords. If you&apos;re manually tagging paid keyword campaigns, you should also use utm_term to specify the keyword. Mapped from lead custom field.</inlineHelpText>
+        <label>Last UTM Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Last_gclid__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Google Adwords tracking id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Google Adwords tracking id</inlineHelpText>
+        <label>Last gclid</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Lead_Source_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Categorizes the type of source that sent a user to your web site. Campaign=utm tagged URL, Direct=Typed in, Organic=non-ad search, Referral=link from another site.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Categorizes the type of source that sent a user to your web site. Campaign=utm tagged URL, Direct=Typed in, Organic=non-ad search, Referral=link from another site.</inlineHelpText>
+        <label>First Lead Source Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Paid_Search__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this is checked, it means that the click that sent a visitor to your web site prior to them submitting a web-to-lead form was on an advertisement (Adwords, Microsoft AdCenter, etc.). Unchecked means they clicked on an organic search result.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this is checked, it means that the click that sent a visitor to your web site prior to them submitting a web-to-lead form was on an advertisement (Adwords, Microsoft AdCenter, etc.). Unchecked means they clicked on an organic search result.</inlineHelpText>
+        <label>First Paid Search</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Referrer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Referring URL that a visitor came from to arrive on your web site, prior to submitting a web-to-lead form.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Referring URL that a visitor came from to arrive on your web site, prior to submitting a web-to-lead form.</inlineHelpText>
+        <label>First Referrer</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cloudamp__Search_Engine__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The search engine that a visitor used to find your site, prior to submitting the web-to-lead form.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The search engine that a visitor used to find your site, prior to submitting the web-to-lead form.</inlineHelpText>
+        <label>First Search Engine</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cloudamp__gclid__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Google Adwords tracking id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Google Adwords tracking id</inlineHelpText>
+        <label>First gclid</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Browser__c</fullName>
+        <externalId>false</externalId>
+        <label>Browser</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_First_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>First Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Google Analytics Client ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Google_Analytics_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( (&quot;https://analytics.google.com/analytics/web/#report/visitors-user-activity/a72840801w110617423p115383936/%3F_r.userId%3D&quot; &amp; gaconnector_Google_Analytics_Client_ID__c &amp; &quot;%26_r.userListReportStates%3D%26_r.userListReportId%3Dvisitors-legacy-user-id/&quot;), &quot;Open in Google Analytics&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Google Analytics Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_IP_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>IP Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Campaign</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Channel</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Content__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Content</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Landing_Page__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Landing Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Medium__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Medium</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Referrer__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Referrer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Last_Click_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Click Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Latitude_from_IP__c</fullName>
+        <externalId>false</externalId>
+        <label>Latitude</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Location_approx__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://maps.google.com/maps?q=loc:&quot; &amp;  gaconnector_Latitude_from_IP__c  &amp; &quot;,&quot; &amp; (gaconnector_Longitude__c), &quot;Open in Google Maps&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location (approx.)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Longitude</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Number_of_Website_Visits__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Website Visits</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Operating_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating System</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Pages_visited__c</fullName>
+        <externalId>false</externalId>
+        <label>Pages visited</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent on Website</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Spent_on_Website_formul__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ROUND(gaconnector_Time_Spent_on_Website__c / 60000,0)) &amp; &quot;:&quot; &amp; 
+TEXT(MOD(ROUND(gaconnector_Time_Spent_on_Website__c / 1000,0), 60))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time Spent on Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>gaconnector_Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score [1-4]</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score [0-100]</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Behavioral_Updated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Behavior Score Last Updated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>infer3__Encoded_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>RPAD(&apos;4&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_3_Threshold__c,&apos;4&apos;)+RPAD(&apos;3&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_2_Threshold__c-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_3_Threshold__c,&apos;3&apos;)+RPAD(&apos;2&apos;,$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_1_Threshold__c-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_2_Threshold__c,&apos;2&apos;)+RPAD(&apos;1&apos;,101-$Setup.infer3__Infer_Scoring_Settings__c.infer3__Score_Bucket_1_Threshold__c,&apos;1&apos;)</formula>
+        <label>Infer Encoded Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Personas__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Profiles</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Profiles_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer: Profiles (Short)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Rating__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/255),0,infer3__Score_Object_ID__r.infer3__Rating_0__c,1,infer3__Score_Object_ID__r.infer3__Rating_1__c,2,infer3__Score_Object_ID__r.infer3__Rating_2__c,3,infer3__Score_Object_ID__r.infer3__Rating_3__c,4,infer3__Score_Object_ID__r.infer3__Rating_4__c,5,infer3__Score_Object_ID__r.infer3__Rating_5__c,6,infer3__Score_Object_ID__r.infer3__Rating_6__c,null),1+MOD(infer3__Score_Index__c,255),1),&apos;^&apos;,&apos; &apos;))</formula>
+        <label>Infer: Fit Score</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Infer_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>VALUE(TRIM(SUBSTITUTE(MID(CASE(FLOOR(infer3__Score_Index__c/85),0,infer3__Score_Object_ID__r.infer3__Score_0__c,1,infer3__Score_Object_ID__r.infer3__Score_1__c,2,infer3__Score_Object_ID__r.infer3__Score_2__c,3,infer3__Score_Object_ID__r.infer3__Score_3__c,4,infer3__Score_Object_ID__r.infer3__Score_4__c,5,infer3__Score_Object_ID__r.infer3__Score_5__c,6,infer3__Score_Object_ID__r.infer3__Score_6__c,7,infer3__Score_Object_ID__r.infer3__Score_7__c,8,infer3__Score_Object_ID__r.infer3__Score_8__c,9,infer3__Score_Object_ID__r.infer3__Score_9__c,10,infer3__Score_Object_ID__r.infer3__Score_10__c,11,infer3__Score_Object_ID__r.infer3__Score_11__c,12,infer3__Score_Object_ID__r.infer3__Score_12__c,13,infer3__Score_Object_ID__r.infer3__Score_13__c,14,infer3__Score_Object_ID__r.infer3__Score_14__c,15,infer3__Score_Object_ID__r.infer3__Score_15__c,16,infer3__Score_Object_ID__r.infer3__Score_16__c,17,infer3__Score_Object_ID__r.infer3__Score_17__c,18,infer3__Score_Object_ID__r.infer3__Score_18__c,null),1+3*MOD(infer3__Score_Index__c,85),3),&apos;^&apos;,&apos; &apos;)))</formula>
+        <label>Infer: Fit Score [0-100]</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Index__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Score Index</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Object_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Score Object ID</label>
+        <referenceTo>infer3__Score_Object__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contact_Score_Object</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>infer3__Score_Snapshot__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A saved copy of the score, if the &quot;Update Contact with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&apos;t track formula fields.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A saved copy of the score, if the &quot;Update Contact with Score Update&quot; option is enabled. This field is only intended for custom triggers or third-party systems that can&apos;t track formula fields.</inlineHelpText>
+        <label>Infer Score Snapshot NOT FOR LAYOUT</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_signals__Infer_Smart_Signals_Record__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Infer Smart Signals Record</label>
+        <referenceTo>infer_signals__Infer_Smart_Signals_Record__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_city__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_5__c</formula>
+        <label>Infer: City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_company_size__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_1__c</formula>
+        <label>Infer: Company Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_competitors__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_29__c</formula>
+        <label>Infer: Competitors</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_country__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_10__c</formula>
+        <label>Infer: Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_email_type__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_7__c</formula>
+        <label>Infer: Email Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_eloqua__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_25__c</formula>
+        <label>Infer: Has Eloqua</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_hubspot__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_28__c</formula>
+        <label>Infer: Has Hubspot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_marketo__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_26__c</formula>
+        <label>Infer: Has Marketo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_pardot__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_27__c</formula>
+        <label>Infer: Has Pardot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_has_ssl__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_18__c</formula>
+        <label>Infer: Has SSL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_3__c</formula>
+        <label>Infer: Revenue</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_sector__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_4__c</formula>
+        <label>Infer: Sector</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_state__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_12__c</formula>
+        <label>Infer: State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_uses_aws__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_19__c</formula>
+        <label>Infer: Uses AWS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_website_rank__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_6__c</formula>
+        <label>Infer: Website Rank</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>infer_smart_signal_zip__c</fullName>
+        <externalId>false</externalId>
+        <formula>infer_signals__Infer_Smart_Signals_Record__r.infer_signals__Field_8__c</formula>
+        <label>Infer: Zip Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sl_account_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sl_cadence_stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Cadence Stage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sl_dnd__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.DND__c</formula>
+        <label>DND</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>tz__LT_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hidden field used by the Local Time App. Do not add it to the page layouts and list views.</inlineHelpText>
+        <label>LT Info</label>
+        <length>300</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Contact in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Contact in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_24__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Contact in 24-hr format.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; &quot;/&quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; &quot;/&quot; &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; &quot; &quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 )
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time for the Contact in 24-hr format.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time_Short__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time (without date) for the Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;)
+)</formula>
+        <inlineHelpText>Shows the local time (without date) for the Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current local time for the Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTF_Offset__c),
+&quot;Unknown&quot;,
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 6, 2 ) &amp; &quot;/&quot; &amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 9, 2 ) &amp; &quot;/&quot; &amp;
+LEFT( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 4 ) &amp; &quot; &quot; &amp;
+TEXT(
+IF(
+OR(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 0,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) = 12
+),
+12,
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) )
+-
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+0,
+12
+)
+)
+)
+&amp;&quot;:&quot;&amp;
+MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 15, 2 )
+&amp;&quot; &quot;&amp;
+IF(
+VALUE( MID( TEXT( NOW()+ tz__UTF_Offset__c /24 ), 12, 2 ) ) &lt; 12,
+&quot;AM&quot;,
+&quot;PM&quot;
+)
+&amp; &quot; &quot; &amp;
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;) 
+)</formula>
+        <inlineHelpText>Shows the local time for the Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_Full__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full timezone name.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Full timezone name.</inlineHelpText>
+        <label>Timezone (Full)</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone_IANA__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone as defined by Internet Assigned Numbers Authority (IANA).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone as defined by Internet Assigned Numbers Authority (IANA).</inlineHelpText>
+        <label>Timezone (IANA)</label>
+        <length>35</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Current timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTF_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the current UTC timezone offset of the Contact. Uses the mailing address, and in its absence the Phone number field in the calculation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Contact.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>zqu__County__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>cloudamp__Referrer__c</columns>
+        <columns>cloudamp__Search_Engine__c</columns>
+        <columns>cloudamp__GA_Campaign__c</columns>
+        <columns>cloudamp__GA_Source__c</columns>
+        <columns>cloudamp__GA_Term__c</columns>
+        <columns>cloudamp__Last_Search_Engine__c</columns>
+        <columns>cloudamp__Last_UTM_Campaign__c</columns>
+        <columns>cloudamp__Last_UTM_Source__c</columns>
+        <columns>cloudamp__Last_UTM_Term__c</columns>
+        <columns>CONTACT.LEAD_SOURCE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTACT.BIRTHDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <listViewButtons>salesloft_import</listViewButtons>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SendGmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Send Gmail</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://mail.google.com/mail?view=cm&amp;tf=0&amp;to={!Contact_Email}&lt;{!Contact_LastName}, {!Contact_FirstName}&gt;&amp;tf=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Contact_MailingCountry}&amp;csz={!Contact_MailingCity}+{!Contact_MailingState}+{!Contact_MailingPostalCode}+&amp;addr={!Contact_MailingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooWeather</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo! Weather</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>salesloft_import</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>SalesLoft Import</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>var leads = {!GETRECORDIDS( $ObjectType.Lead )};
+var myurl = &quot;https://app.salesloft.com/app/import/crm?lead=&quot; + leads;
+
+window.open(myurl,&apos;_blank&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>tz__Local_Time_Contact_Btn</fullName>
+        <availability>online</availability>
+        <description>Find Local Time is a button that can be placed in the Contacts Page Layout. Displays the local time for the current record. The Mailing Country, Mailing State, and Mailing City fields need to be properly filled in order for this button to function properly. Else the value &quot;Unknown&quot; is shown.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Find Local Time</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;https://success-software.biz/localtime/js/json3.min.js&quot;)} 
+
+function calcTime(sOffset,sFrequency,sEnd,sObject) {
+tbutton=document.getElementsByName(sObject);
+
+if(sOffset == &apos;N/A&apos;) {
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=&apos;Unknown&apos;;
+}
+}
+else {
+var args1={offset:sOffset};
+cttime=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getLocalTimeString&quot;,args1);
+for(i=0;i&lt;tbutton.length;i++) {
+tbutton[i].value=cttime +  &quot; &quot; + sEnd;
+}
+}
+
+self.status=tbutton[0].value;
+setTimeout(&apos;tbutton[0].click();&apos;,sFrequency);
+
+}
+onError=null;
+
+if(typeof sOffset==&apos;undefined&apos;) {
+sOffset=&apos;N/A&apos;;
+sEnd=&apos;N/A&apos;;
+
+try { 
+var args={objId:&quot;{!JSENCODE(Contact.Id)}&quot;};
+var jsontext=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;FindLocalTime&quot;,args);
+if(jsontext != null &amp;&amp; jsontext.length &gt; 0) {
+var lt=JSON.parse(jsontext);
+sOffset=lt.offset;
+sEnd=lt.abbreviation;
+if(&quot;{!$Setup.tz__lt_app_settings__c.tz__Abbreviation__c}&quot; == &quot;false&quot;) sEnd = &apos;&apos;; 
+}
+}
+catch(err) {alert(err);}
+}
+
+if(typeof freq==&apos;undefined&apos;) {
+freq=sforce.apex.execute(&quot;tz.LocalTime&quot;,&quot;getFrequency&quot;,{});
+}
+
+calcTime(sOffset,freq,sEnd,&quot;tz__local_time_contact_btn&quot;);</url>
+    </webLinks>
+</CustomObject>

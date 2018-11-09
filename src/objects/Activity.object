@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Activity_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() -  DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Activity Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Activity_Outcome__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity Outcome</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Connect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Available</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call Back</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DND</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LVM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo Scheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demonstration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Demo Rescheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Future Interest</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email - Connect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invalid Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Language Barrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Call_Recording__c</fullName>
+        <description>Outreach Call Recording</description>
+        <externalId>false</externalId>
+        <label>Call Recording</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HubSpot_Inc__Guid__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique ID for HubSpot related Tasks</description>
+        <externalId>false</externalId>
+        <label>Guid</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoftReplyCount__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Reply Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Cadence_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Cadence ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Cadence_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Cadence Name</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Clicked_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Clicked Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Email_Template_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Email Template ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Email_Template_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Email Template Title</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Engagement_Step_Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(SalesLoft_Step_Day__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SalesLoft Engagement Step Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_External_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Cadence External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Step_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Step Day</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Step_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Step ID</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Step_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Step Name</label>
+        <length>200</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Step_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Step Type</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesLoft_Viewed_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>SalesLoft Viewed Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Spent__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Local_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the local time for the related Lead or Contact.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(tz__UTC_Offset__c), 
+&quot;Unknown&quot;, 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 6, 2 ) &amp; &quot;/&quot; &amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 9, 2 ) &amp; &quot;/&quot; &amp; 
+LEFT( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 4 ) &amp; &quot; &quot; &amp; 
+TEXT( 
+IF( 
+OR( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 0, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) = 12 
+), 
+12, 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) 
+- 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+0, 
+12 
+) 
+) 
+) 
+&amp;&quot;:&quot;&amp; 
+MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 15, 2 ) 
+&amp;&quot; &quot;&amp; 
+IF( 
+VALUE( MID( TEXT( NOW()+ tz__UTC_Offset__c /24 ), 12, 2 ) ) &lt; 12, 
+&quot;AM&quot;, 
+&quot;PM&quot; 
+) 
+&amp; &quot; &quot; &amp; 
+IF( $Setup.tz__lt_app_settings__c.tz__Abbreviation__c, tz__Timezone__c,&quot;&quot;) 
+)</formula>
+        <inlineHelpText>Shows the local time for the related Lead or Contact.</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__Timezone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Timezone abbreviation (PST, EST,etc..)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Timezone abbreviation (PST, EST,etc..)</inlineHelpText>
+        <label>Timezone</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>tz__UTC_Offset__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Shows the UTC timezone offset of the Lead / Contact associated with the task.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows the UTC timezone offset of the Lead / Contact associated with the task.</inlineHelpText>
+        <label>UTC Offset</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

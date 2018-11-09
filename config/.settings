@@ -12,6 +12,16 @@
         "ApexComponent",
         "ApexPage",
         "ApexTrigger",
-        "StaticResource"
+        "CustomLabels",
+        "CustomMetadata",
+        "CustomObject",
+        "CustomPermission",
+        "Flow",
+        "FlowDefinition",
+        "Layout",
+        "LeadConvertSettings",
+        "PermissionSet",
+        "StaticResource",
+        "Workflow"
     ]
 }

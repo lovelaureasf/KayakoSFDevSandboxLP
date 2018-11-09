@@ -131,6 +131,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/pages/ChangePassword.page",
+			"settings":
+			{
+				"buffer_size": 2271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/package.xml",
+			"settings":
+			{
+				"buffer_size": 571,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -173,6 +189,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/lpanchal/Documents/Kayako Dev/src/package.xml",
 		"/C/Users/lpanchal/Documents/FullCast/debug/logs/2018-10-22 22-10-17.log",
 		"/C/Users/lpanchal/Documents/FullCast/debug/logs/2018-10-22 21-05-53.log",
 		"/C/Users/lpanchal/Documents/FullCast/src/classes/ErrorLogging.cls",
@@ -270,8 +287,69 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/pages/ChangePassword.page",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1927,
+								1927
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/package.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -308,7 +386,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 0.0
+		"height": 126.0
 	},
 	"output.find_results":
 	{

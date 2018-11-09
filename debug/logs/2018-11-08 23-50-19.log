@@ -1,0 +1,59 @@
+34.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+23:50:11.0 (349988)|USER_INFO|[EXTERNAL]|005p0000001vkCf|gaurav.agarwal.1@aurea.com.devsandbox|India Standard Time|GMT+05:30
+23:50:11.0 (414126)|EXECUTION_STARTED
+23:50:11.0 (419257)|CODE_UNIT_STARTED|[EXTERNAL]|06610000000j30p|VF: /apex/CreateNewLeadPage
+23:50:11.0 (930480)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06610000000j30p
+23:50:11.0 (8482756)|VF_DESERIALIZE_VIEWSTATE_END
+23:50:11.9 (9364072)|SYSTEM_MODE_ENTER|true
+23:50:11.10 (10247188)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (34267748)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (36088851)|USER_DEBUG|[22]|DEBUG|the value of the picval isFusion
+23:50:11.0 (36175131)|USER_DEBUG|[22]|DEBUG|the value of the picval isCase
+23:50:11.0 (36207650)|USER_DEBUG|[22]|DEBUG|the value of the picval isEngage
+23:50:11.0 (36237734)|USER_DEBUG|[22]|DEBUG|the value of the picval isStandard
+23:50:11.0 (36373004)|USER_DEBUG|[22]|DEBUG|the value of the picval isGrowth
+23:50:11.0 (36424864)|USER_DEBUG|[22]|DEBUG|the value of the picval isEnterprise
+23:50:11.0 (36464279)|USER_DEBUG|[22]|DEBUG|the value of the picval isFree
+23:50:11.0 (36509600)|USER_DEBUG|[22]|DEBUG|the value of the picval isInbox
+23:50:11.0 (36546794)|USER_DEBUG|[22]|DEBUG|the value of the picval isTeam
+23:50:11.0 (36589785)|USER_DEBUG|[22]|DEBUG|the value of the picval isScale
+23:50:11.37 (37249277)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (68880298)|SYSTEM_MODE_ENTER|false
+23:50:11.0 (68901004)|SYSTEM_MODE_EXIT|false
+23:50:11.87 (87876580)|SYSTEM_MODE_ENTER|true
+23:50:11.88 (88095964)|SYSTEM_MODE_ENTER|true
+23:50:11.96 (96090696)|SYSTEM_MODE_ENTER|true
+23:50:11.96 (96315499)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (105703768)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (106051184)|USER_DEBUG|[22]|DEBUG|the value of the picval isFusion
+23:50:11.0 (106119178)|USER_DEBUG|[22]|DEBUG|the value of the picval isCase
+23:50:11.0 (106147591)|USER_DEBUG|[22]|DEBUG|the value of the picval isEngage
+23:50:11.0 (106175743)|USER_DEBUG|[22]|DEBUG|the value of the picval isStandard
+23:50:11.0 (106226017)|USER_DEBUG|[22]|DEBUG|the value of the picval isGrowth
+23:50:11.0 (106263442)|USER_DEBUG|[22]|DEBUG|the value of the picval isEnterprise
+23:50:11.0 (106300265)|USER_DEBUG|[22]|DEBUG|the value of the picval isFree
+23:50:11.0 (106336842)|USER_DEBUG|[22]|DEBUG|the value of the picval isInbox
+23:50:11.0 (106372545)|USER_DEBUG|[22]|DEBUG|the value of the picval isTeam
+23:50:11.0 (106409278)|USER_DEBUG|[22]|DEBUG|the value of the picval isScale
+23:50:11.0 (107897345)|SYSTEM_MODE_ENTER|true
+23:50:11.0 (112757486)|VF_SERIALIZE_VIEWSTATE_BEGIN|06610000000j30p
+23:50:11.0 (115578818)|VF_SERIALIZE_VIEWSTATE_END
+23:50:11.118 (118078404)|CUMULATIVE_LIMIT_USAGE
+23:50:11.118 (118078404)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+23:50:11.118 (118078404)|CUMULATIVE_LIMIT_USAGE_END
+
+23:50:11.0 (118131331)|CODE_UNIT_FINISHED|VF: /apex/CreateNewLeadPage
+23:50:11.0 (118868544)|EXECUTION_FINISHED
