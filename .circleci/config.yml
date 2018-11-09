@@ -25,5 +25,4 @@ jobs:
           command:sonarqube-6.7.5/bin/linux-x86-32/sonar.sh    
       - run: 
           name: start Sonar Scanner
-          command: sonar-runner 
-        
+          command: sonar-runner

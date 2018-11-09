@@ -948,7 +948,6 @@
     <members>UserProvisioningRequest</members>
     <members>UserTerritory2Association</members>
     <name>CustomObject</name>
-  </types>
- 
+  </types> 
   <version>43.0</version>
 </Package>
