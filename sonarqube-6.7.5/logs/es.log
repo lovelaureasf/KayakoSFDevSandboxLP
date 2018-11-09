@@ -1,0 +1,199 @@
+2018.11.07 11:36:32 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 11:36:32 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [112.8gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.07 11:36:32 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.07 11:36:33 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.07 11:36:33 INFO  es[][o.e.n.Node] version[5.6.3], pid[22608], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.07 11:36:33 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.07 11:36:34 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.07 11:36:38 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.07 11:36:38 INFO  es[][o.e.n.Node] initialized
+2018.11.07 11:36:38 INFO  es[][o.e.n.Node] starting ...
+2018.11.07 11:36:39 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.07 11:36:42 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{vbtFg3cCRKO3bu-mKll9bg}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.07 11:36:42 INFO  es[][o.e.n.Node] started
+2018.11.07 11:36:43 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.07 11:36:45 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2018.11.07 11:50:32 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 11:50:32 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.3.jar:5.6.3]
+2018.11.07 11:50:32 WARN  es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+2018.11.07 11:51:23 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 11:51:23 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.3.jar:5.6.3]
+2018.11.07 11:51:23 WARN  es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+2018.11.07 11:53:34 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 11:53:34 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.3.jar:5.6.3]
+2018.11.07 11:53:34 WARN  es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+2018.11.07 11:57:01 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 11:57:01 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) [elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) [elasticsearch-5.6.3.jar:5.6.3]
+2018.11.07 11:57:01 WARN  es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:136) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:123) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:70) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:134) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:91) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:84) ~[elasticsearch-5.6.3.jar:5.6.3]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Program Files\sonarqube-6.7.5\data\es5\sonarqube]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:261) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:265) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.node.Node.<init>(Node.java:245) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:233) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:342) ~[elasticsearch-5.6.3.jar:5.6.3]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:132) ~[elasticsearch-5.6.3.jar:5.6.3]
+	... 6 more
+2018.11.07 12:13:03 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 12:13:03 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [113gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.07 12:13:03 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.07 12:13:04 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.07 12:13:04 INFO  es[][o.e.n.Node] version[5.6.3], pid[9756], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.07 12:13:04 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.07 12:13:05 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.07 12:13:06 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.07 12:13:07 INFO  es[][o.e.n.Node] initialized
+2018.11.07 12:13:07 INFO  es[][o.e.n.Node] starting ...
+2018.11.07 12:13:07 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.07 12:13:10 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{glNqjAljS8SVfKp-_dOdcQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.07 12:13:10 INFO  es[][o.e.n.Node] started
+2018.11.07 12:13:11 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.07 12:13:12 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2018.11.07 14:48:08 INFO  es[][o.e.n.Node] initializing ...
+2018.11.07 14:48:08 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [113.1gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.07 14:48:08 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.07 14:48:09 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.07 14:48:09 INFO  es[][o.e.n.Node] version[5.6.3], pid[17420], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.07 14:48:09 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.07 14:48:10 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.07 14:48:13 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.07 14:48:15 INFO  es[][o.e.n.Node] initialized
+2018.11.07 14:48:15 INFO  es[][o.e.n.Node] starting ...
+2018.11.07 14:48:16 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.07 14:48:19 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{YQxot0W6TNC3-uE191_Rqw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.07 14:48:19 INFO  es[][o.e.n.Node] started
+2018.11.07 14:48:20 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.07 14:48:24 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][1], [components][2], [metadatas][0]] ...]).

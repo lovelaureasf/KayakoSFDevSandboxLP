@@ -1,0 +1,431 @@
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.05 15:50:51 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.05 15:50:51 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.05 15:50:51 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.05 15:50:52 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2018.11.05 15:50:53 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.05 15:50:53 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.05 15:51:06 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.05 15:51:06 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process17662343677381593273properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.05 15:51:49 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.05 15:51:49 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process16381533226684337745properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.05 15:52:00 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.05 15:52:00 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.05 18:14:42 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+
+WrapperSimpleApp: Encountered an error running main: java.nio.file.FileSystemException: C:\Program Files\sonarqube-6.7.5\temp\ce-exploded-plugins\csharp\META-INF\lib\commons-lang-2.6.jar: The process cannot access the file because it is being used by another process.
+
+java.nio.file.FileSystemException: C:\Program Files\sonarqube-6.7.5\temp\ce-exploded-plugins\csharp\META-INF\lib\commons-lang-2.6.jar: The process cannot access the file because it is being used by another process.
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(Unknown Source)
+	at java.base/java.nio.file.Files.delete(Unknown Source)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:181)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:143)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:55)
+	at org.sonar.application.App.main(App.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.base/java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.06 01:32:57 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.06 01:32:57 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.06 01:32:58 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.06 01:32:58 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.06 01:32:59 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.06 01:32:59 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 01:33:13 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.06 01:33:13 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process420878075322530665properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 01:33:35 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.06 01:33:35 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process11841098632285410601properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 01:33:46 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.06 01:33:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2018.11.06 02:41:39 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2018.11.06 02:41:42 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2018.11.06 02:41:42 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2018.11.06 02:41:42 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2018.11.06 02:41:42 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.06 02:41:42 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.06 02:41:42 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.06 02:41:42 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.06 02:41:42 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2018.11.06 02:41:53 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.06 02:41:53 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process842493920788291276properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 02:42:20 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.06 02:42:20 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process9947981994103807266properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 02:42:30 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.06 02:42:30 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.06 10:53:23 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.06 10:53:29 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.06 10:53:30 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.06 10:53:30 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.06 10:53:32 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.06 10:53:32 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 10:53:53 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.06 10:53:53 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process15827175938811686007properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 10:54:28 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.06 10:54:28 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process9298584199746763237properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.06 10:54:45 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.06 10:54:45 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2018.11.06 17:02:34 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2018.11.06 17:02:37 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2018.11.06 17:02:40 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2018.11.06 17:02:40 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2018.11.06 17:02:40 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 11:36:28 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 11:36:28 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 11:36:29 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 11:36:29 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2018.11.07 11:36:29 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 11:36:29 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:36:45 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 11:36:45 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process11647250967099816282properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:37:12 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.07 11:37:12 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process12567838475005314155properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:37:29 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.07 11:37:29 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2018.11.07 11:49:46 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 11:50:29 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 11:50:29 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 11:50:29 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 11:50:29 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.07 11:50:30 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 11:50:30 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:50:32 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 11:50:32 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process8931720674617354953properties
+2018.11.07 11:50:33 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 1
+2018.11.07 11:50:33 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2018.11.07 11:50:34 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2018.11.07 11:50:34 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 11:51:20 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 11:51:20 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 11:51:20 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 11:51:20 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.07 11:51:20 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 11:51:20 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:51:23 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 11:51:23 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process12413109390209048629properties
+2018.11.07 11:51:23 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 1
+2018.11.07 11:51:23 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:51:45 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.07 11:52:23 INFO  app[][o.s.a.p.SQProcess] web failed to stop in a timely fashion. Killing it.
+2018.11.07 11:52:23 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2018.11.07 11:52:23 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 11:53:19 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 11:53:30 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 11:53:30 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 11:53:30 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.07 11:53:31 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 11:53:31 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:53:34 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 11:53:34 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process10342776431458828880properties
+2018.11.07 11:53:35 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 1
+2018.11.07 11:53:35 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:53:47 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2018.11.07 11:53:47 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 11:56:58 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 11:56:58 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 11:56:58 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 11:56:58 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.07 11:56:58 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 11:56:58 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 11:57:01 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 11:57:01 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process4107819747738400546properties
+2018.11.07 11:57:01 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 1
+2018.11.07 11:57:01 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+
+WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+          The file is located on the path at the following location but
+          could not be loaded:
+            C:\Program Files\sonarqube-6.7.5\bin\windows-x86-32\.\lib\wrapper.dll
+          Please verify that the file is readable by the current user
+          and that the file has not been corrupted in any way.
+          One common cause of this problem is running a 32-bit version
+          of the Wrapper with a 64-bit version of Java, or vica versa.
+          This is a 64-bit JVM.
+          Reported cause:
+            C:\Program Files\sonarqube-6.7.5\bin\windows-x86-32\lib\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+          System signals will not be handled correctly.
+
+2018.11.07 11:57:30 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+
+WrapperSimpleApp: Encountered an error running main: java.nio.file.FileSystemException: C:\Program Files\sonarqube-6.7.5\temp\tmp\sonar-plugin-api-deps15088729896644883232jar: The process cannot access the file because it is being used by another process.
+
+java.nio.file.FileSystemException: C:\Program Files\sonarqube-6.7.5\temp\tmp\sonar-plugin-api-deps15088729896644883232jar: The process cannot access the file because it is being used by another process.
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(Unknown Source)
+	at java.base/java.nio.file.Files.delete(Unknown Source)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:181)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:143)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:112)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.base/java.nio.file.Files.walkFileTree(Unknown Source)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:55)
+	at org.sonar.application.App.main(App.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.base/java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 12:13:00 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 12:13:00 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 12:13:01 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 12:13:01 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2018.11.07 12:13:01 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 12:13:01 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 12:13:12 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 12:13:12 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process16886144394520281474properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 12:13:37 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.07 12:13:37 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process6913651776872200278properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 12:13:55 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.07 12:13:55 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2018.11.07 14:48:04 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Program Files\sonarqube-6.7.5\temp
+2018.11.07 14:48:04 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2018.11.07 14:48:04 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Program Files\sonarqube-6.7.5\elasticsearch]: C:\Program Files\Java\jre-10.0.2\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+AlwaysPreTouch -server -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true -Xms512m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch -cp lib/* org.elasticsearch.bootstrap.Elasticsearch -Epath.conf=C:\Program Files\sonarqube-6.7.5\temp\conf\es
+2018.11.07 14:48:04 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2018.11.07 14:48:05 INFO  app[][o.e.p.PluginsService] no modules loaded
+2018.11.07 14:48:05 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 14:48:24 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2018.11.07 14:48:24 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.server.app.WebServer C:\Program Files\sonarqube-6.7.5\temp\sq-process11836082250979134229properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 14:49:05 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2018.11.07 14:49:05 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Program Files\sonarqube-6.7.5]: C:\Program Files\Java\jre-10.0.2\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Program Files\sonarqube-6.7.5\temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*;./lib/server/*;./lib/ce/*;C:\Program Files\sonarqube-6.7.5\lib\jdbc\h2\h2-1.3.176.jar org.sonar.ce.app.CeServer C:\Program Files\sonarqube-6.7.5\temp\sq-process16940995589041942585properties
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (file:/C:/Program%20Files/sonarqube-6.7.5/lib/common/netty-common-4.1.13.Final.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2018.11.07 14:49:27 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2018.11.07 14:49:27 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up

@@ -6,9 +6,11 @@
             <pathelement location="ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
-	<target name="push">
+	<target name="retrieve">
 	 <mkdir dir="DirOutput"/>
 	 <sf:retrieve username="${sf.kayakousername}" password="${sf.kayakopassword}"  serverurl="${sf.serverurl}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="src/package.xml"/>
-       <sf:deploy username="${sf.kayakouatusername}" password="${sf.kayakouatpassword}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="DirOutput" rollbackOnError="true" />
+    </target>
+	<target name="push">
+	      <sf:deploy username="${sf.kayakouatusername}" password="${sf.kayakouatpassword}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="DirOutput" rollbackOnError="true" />
     </target>
 </project>

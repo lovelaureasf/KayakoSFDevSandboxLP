@@ -1,0 +1,63 @@
+2018.11.06 01:33:02 INFO  es[][o.e.n.Node] initializing ...
+2018.11.06 01:33:02 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [89.2gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.06 01:33:02 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.06 01:33:03 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.06 01:33:03 INFO  es[][o.e.n.Node] version[5.6.3], pid[4152], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.06 01:33:03 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.06 01:33:04 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.06 01:33:06 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.06 01:33:07 INFO  es[][o.e.n.Node] initialized
+2018.11.06 01:33:07 INFO  es[][o.e.n.Node] starting ...
+2018.11.06 01:33:07 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.06 01:33:10 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{e-dZFNNaQ82mZSDjAenVbg}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.06 01:33:10 INFO  es[][o.e.n.Node] started
+2018.11.06 01:33:11 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.06 01:33:13 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2018.11.06 02:41:44 INFO  es[][o.e.n.Node] initializing ...
+2018.11.06 02:41:44 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [112.5gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.06 02:41:44 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.06 02:41:44 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.06 02:41:44 INFO  es[][o.e.n.Node] version[5.6.3], pid[13792], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.06 02:41:44 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.06 02:41:45 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.06 02:41:47 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.06 02:41:47 INFO  es[][o.e.n.Node] initialized
+2018.11.06 02:41:47 INFO  es[][o.e.n.Node] starting ...
+2018.11.06 02:41:48 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.06 02:41:51 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{9Wf1cLMAQtCOODquAaSbPw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.06 02:41:51 INFO  es[][o.e.n.Node] started
+2018.11.06 02:41:51 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.06 02:41:53 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2018.11.06 10:53:38 INFO  es[][o.e.n.Node] initializing ...
+2018.11.06 10:53:39 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[Windows (C:)]], net usable_space [112.2gb], net total_space [237.2gb], spins? [unknown], types [NTFS]
+2018.11.06 10:53:39 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2018.11.06 10:53:39 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [wIuhAEf9QfO8YT7pMBuE2w]
+2018.11.06 10:53:39 INFO  es[][o.e.n.Node] version[5.6.3], pid[8744], build[1a2f265/2017-10-06T20:33:39.012Z], OS[Windows 10/10.0/amd64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.2/10.0.2+13]
+2018.11.06 10:53:39 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Program Files\sonarqube-6.7.5\elasticsearch]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [aggs-matrix-stats]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [ingest-common]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2018.11.06 10:53:40 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2018.11.06 10:53:44 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen]
+2018.11.06 10:53:45 INFO  es[][o.e.n.Node] initialized
+2018.11.06 10:53:45 INFO  es[][o.e.n.Node] starting ...
+2018.11.06 10:53:46 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2018.11.06 10:53:49 INFO  es[][o.e.c.s.ClusterService] new_master {sonarqube}{wIuhAEf9QfO8YT7pMBuE2w}{CZibdlsDSBG20cvbJf2OTw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: zen-disco-elected-as-master ([0] nodes joined)
+2018.11.06 10:53:49 INFO  es[][o.e.n.Node] started
+2018.11.06 10:53:50 INFO  es[][o.e.g.GatewayService] recovered [8] indices into cluster_state
+2018.11.06 10:53:53 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
