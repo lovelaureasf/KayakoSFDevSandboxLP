@@ -1,0 +1,26 @@
+<apex:page standardController="Lead" extensions="LeadInstanceDetailsController" docType="html-5.0">
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; }
+        .requiredInput { display: inline-block; height: initial !important; }
+        td.dataCol { width: 100%; }
+    </style>
+    <apex:form id="changeEnrichmentForm">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!UpdateInstance}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Answer the questions">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+
+                        <apex:outputLabel value="Expiry Date" />
+                        <apex:input type="date" value="{!expiryDate}" required="true"/><br /><br />
+
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

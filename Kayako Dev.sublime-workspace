@@ -138,14 +138,6 @@
 				"buffer_size": 2271,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "src/package.xml",
-			"settings":
-			{
-				"buffer_size": 571,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -287,7 +279,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -311,36 +303,6 @@
 						{
 							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/package.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 571,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,

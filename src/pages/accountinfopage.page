@@ -1,3 +1,4 @@
+<!-- Changes for demo -->
 <apex:page standardController="account">
     <apex:pageMessage severity="warning" title="This account is in DND mode" strength="3"  rendered="{!if(account.DND__c,true,false)}"> </apex:pageMessage>
 </apex:page>

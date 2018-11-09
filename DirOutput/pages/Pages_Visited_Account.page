@@ -1,0 +1,15 @@
+<apex:page standardController="Account">
+    <span id="gaconnector_pages_visited_list">{!account.gaconnector_Pages_visited__c}</span>
+    <script>
+    var pagesVisited = document.getElementById("gaconnector_pages_visited_list");
+    var paths = pagesVisited.innerHTML.split('|');
+    pagesVisited.innerHTML = '';
+    for (var i=0; i<paths.length; i++) {
+    	var path = paths[i];
+        var href = 'http://your-domain.com' + path;
+        var link = '<a target="__blank" href="' + href + '">' + path + '</a><br>';
+        pagesVisited.innerHTML += link;
+    }
+    </script>
+    
+</apex:page>

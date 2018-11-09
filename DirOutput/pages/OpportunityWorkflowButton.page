@@ -1,0 +1,135 @@
+<apex:page standardController="Opportunity" extensions="OpportunityButtonRenderer" id="opp-pg">
+  <apex:form target="_top" style="margin:auto; margin-left: calc(30% + 2px);">
+    <apex:actionFunction name="markwon"    action="{!UrlFor('/apex/InputOpportunityWonReason', null, ['id' = Opportunity.Id])}"  />  
+    <style>
+        input.btn { margin-right: 5px; }
+        body { display: flex; }
+    </style>
+     
+  
+
+        <apex:commandButton title="A demonstration was given."
+            value="Demo"
+            rendered="{!CanDemoOpportunity}"
+            action="{!DemoOpportunity}" />
+
+        <apex:commandButton title="Project Postponed"
+                          value="Postpone Project"
+                          rendered="{!CanProjectPostponedOpportunity}"
+                          action="{!ProjectPostponedOpportunity}" />
+
+         <apex:commandButton title="Generate a new quote"
+            value="New Quote"
+            rendered="{!IF(AND(OR($Profile.Name == 'System Administrator',CONTAINS($UserRole.Name,"Account Executive")),CanProvideNewQuote,OR(Opportunity.Type=='New Business',Opportunity.Type=='Existing - K4 to Kayako')),true,false)}"
+            action="{!UrlFor('/apex/quotecreationpage')}?Id={!Opportunity.Id}" />   
+            
+
+        <apex:commandButton title="Generate a new quote"
+            value="New Quote (Admin)"
+            rendered="{!IF(AND(CanProvideNewQuote,$Profile.Name == 'System Administrator'),true,false)}"
+            action="{!UrlFor('/apex/zqu__quoteEnhancement')}?oppId={!Opportunity.Id}&quoteType=Subscription&stepNumber=1" />
+            
+       <apex:commandButton title="Generate a new quote"
+            value="New Quote (Admin)"
+            rendered="{!IF($User.LastName == 'Kanozia'|| $User.FirstName=='Rajiv' || $User.FirstName=='Nancy',true,false)}"
+            action="{!UrlFor('/apex/zqu__quoteEnhancement')}?oppId={!Opportunity.Id}&quoteType=Subscription&stepNumber=1" />
+
+        <apex:commandButton value="Accept" action="{!markAsAccept}" rendered="{!canMarkAsAccept}"/>
+         <apex:commandButton value="Reject" action="{!markAsReject}" rendered="{!canMarkAsReject}"/>
+
+        <apex:commandButton title="Proposal and Quote given."
+            value="Proposal & Quote"
+            rendered="{!CanProvideProposalAndQuote}"
+            action="{!ProvideProposalAndQuote}" />
+
+        <apex:commandButton title="Opportunity is being reviewed and negotiated."
+            value="Review & Negotiation"
+            action="{!ReviewAndNegotiate}" 
+            rendered="{!CanReviewAndNegotiate}"/>
+
+        <apex:commandButton title="Opportunity is lost."
+            value="Lost"
+            rendered="{!CanMarkAsLost}"  action="{!UrlFor('/apex/InputOpportunityLostReason', null, ['id' = Opportunity.Id])}" />
+
+     <!--   <apex:commandButton title="Opportunity is won."
+            value="Won"
+            rendered="{!CanMarkAsWon}"
+            action="{!MarkAsWon}" /> -->
+            
+        <apex:commandButton title="Opportunity is Won."
+            value="Won"
+            rendered="{!canMarkAsWon}" action="{!UrlFor('/apex/opportunitywonmarker')}?Id={!Opportunity.Id}" 
+              />    
+          
+          
+         <apex:commandButton title="Update Won Factors"
+            value="Update Won Factors"
+            rendered="{!if(AND(opportunity.StageName=='Closed Won',OR($Profile.Name=='Account Executive',$Profile.Name=='System Administrator',CONTAINS($UserRole.Name,'Region Leader'))),true,false)}" onclick="validateWonFactors();" reRender="opp-pg"  />     
+        
+          
+     <!--   <apex:commandButton title="Update Instance details."
+            id="UpdateInstanceDetails"
+            value="Update Instance"
+            action="{!UrlFor('/apex/InputOpportunityInstanceDetails', null, ['id' = Opportunity.Id])}"
+            rendered="{!CanUpdateInstanceDetails}" /> -->
+
+
+        <apex:commandButton title="Update the amount."
+            value="Update"
+            rendered="{!CanUpdatePrice}"
+            action="{!UrlFor('/apex/InputOpportunityAmount', null, [Id = Opportunity.Id])}" />
+        
+        <apex:commandButton title="Upgrade Trial"
+            id="UpgradeTrial"
+            value="Upgrade Trial"
+            action="{!upgrade}"
+            rendered="{!CanUpgrade}" />
+        
+        <script type = "text/javaScript">
+       
+        
+       function validate(){
+            var tcv = '{!opportunity.tcv__c}';
+            
+            if(tcv==null ||tcv==''){
+                alert('TCV should be supplied before marking Won.');
+                window.top.location = '{!LEFT($CurrentPage.URL,FIND('/',$CurrentPage.URL,9))}'+'{!opportunity.id}';
+               
+            }
+            
+            else {
+                 
+                 markwon();   
+            }
+            
+            
+            
+            
+            
+        }
+        
+      function validateWonFactors(){
+          
+          var fac = encodeURIComponent('{!opportunity.factors__c}');
+          var com = encodeURIComponent('{!opportunity.comments__c}');
+          var comp = encodeURIComponent('{!opportunity.competitors__c}');
+          
+          if(fac!=null && com!=null && comp!=null){
+              
+              alert('Everything already seems to be in place. Proceed only if you are convinced that this needs to change');
+              markwon();
+          
+          }else{
+          
+              markwon();
+          
+          }
+      
+      }  
+        
+    </script>
+    
+    
+        
+    </apex:form>
+</apex:page>

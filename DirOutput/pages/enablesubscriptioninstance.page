@@ -1,0 +1,3 @@
+<apex:page standardController="Zuora__Subscription__c" extensions="SubscriptionInstanceEnabler" sidebar="false" showHeader="false" action="{!submitUpdateRequest}" >
+  
+</apex:page>

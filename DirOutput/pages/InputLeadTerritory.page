@@ -1,0 +1,21 @@
+<apex:page standardController="Lead" extensions="LeadTerritoryController">
+    <apex:form id="changeTerritoryForm">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Set Territory" action="{!SetTerritory}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Select the country of lead">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel value="Country" />
+                        <apex:selectList value="{!selectedCountry}" size="1">
+                        <apex:selectOptions value="{!ListOfCountriesForUser}" />
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

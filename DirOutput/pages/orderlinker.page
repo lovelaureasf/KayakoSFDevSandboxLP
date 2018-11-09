@@ -1,0 +1,11 @@
+<apex:page controller="OrderLinkerController" action="{!linkSub}">
+   <apex:form >
+       <apex:outputPanel >
+           <b>Order Id is:  {!message} </b> <br/><br/>
+           <a href="/{!backlink}">Click here</a> to go back.
+           
+       </apex:outputPanel>
+       
+   </apex:form>
+  
+</apex:page>

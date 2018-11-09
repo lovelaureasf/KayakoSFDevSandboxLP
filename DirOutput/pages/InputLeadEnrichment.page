@@ -1,0 +1,30 @@
+<apex:page standardController="Lead" extensions="LeadEnrichmentController" docType="html-5.0">
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; }
+        .requiredInput { display: inline-block; height: initial !important; }
+        td.dataCol { width: 100%; }
+    </style>
+    <apex:form id="changeEnrichmentForm">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!EnrichLead}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Answer the questions">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel value="Total Employees" />
+                        <apex:inputField value="{!activeLead.NumberOfEmployees}" type="number" required="true" /><br /><br />
+
+                        <apex:outputLabel value="Industry" />
+                        <apex:selectList value="{!industry}" size="1" required="true">
+                            <apex:selectOptions value="{!ListOfIndustries}" />
+                        </apex:selectList><br /><br />
+
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

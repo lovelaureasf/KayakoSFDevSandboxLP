@@ -1,0 +1,14 @@
+<apex:page docType="html-5.0" showHeader="false" sidebar="false" standardController="Lead">
+    <apex:pageblock >
+        <apex:pageBlockButtons >
+            <apex:form target="_top">
+                <apex:commandButton title="Add a new note" value="Add New Note" action="{!UrlFor('/002/e', null, [parent_id = Left(Lead.id, 15), retUrl = '/' + Left(Lead.id, 15)])}" />
+                <apex:commandButton title="View all notes in full page" value="View All" action="{!UrlFor('/ui/content/ViewAllNotesPage', null, [id = Lead.Id, retUrl = '/' + Left(Lead.id, 15)])}" />
+            </apex:form>
+        </apex:pageBlockButtons>
+        <apex:pageblocktable value="{!Lead.Notes}" var="note">
+            <apex:column value="{!note.Title}" headerValue="Title"/>
+            <apex:column value="{!note.Body}" headerValue="Content"/>
+        </apex:pageblocktable>
+    </apex:pageblock>
+</apex:page>

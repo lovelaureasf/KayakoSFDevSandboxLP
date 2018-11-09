@@ -1,0 +1,64 @@
+<apex:page standardController="Lead" extensions="LeadQualificationController">
+    <style>
+        label { margin-right: 5px; display: inline-block; width: 150px; }
+        textarea { min-width: 500px; max-width: 500px; min-height: 200px; }
+    </style>
+    <apex:form id="changeQualificationForm">
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!QualifyLead}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Answer the questions">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel value="Budgeted" />
+                        <apex:selectList value="{!budgeted}" size="1" required="true">
+                            <apex:selectOptions value="{!BudgetedOptions}" />
+                            </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Role" />
+                        <apex:selectList value="{!role}" size="1" required="true">
+                            <apex:selectOptions value="{!RoleOptions}" />
+                        </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Authority" />
+                        <apex:selectList value="{!authority}" size="1" required="true">
+                            <apex:selectOptions value="{!AuthorityOptions}" />
+                        </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Current System" />
+                        <apex:selectList value="{!currentSystem}" size="1" required="true">
+                            <apex:selectOptions value="{!CurrentSystemOptions}" />
+                        </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Intended Use" />
+                        <apex:selectList value="{!intendedUse}" size="1" required="true">
+                            <apex:selectOptions value="{!IntendedUseOptions}" />
+                        </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Department" />
+                        <apex:selectList value="{!department}" size="1" required="true">
+                            <apex:selectOptions value="{!DepartmentOptions}" />
+                        </apex:selectList><br /><br />
+                        
+                        <apex:outputLabel value="Industry" />
+                        <apex:selectList value="{!industry}" size="1" required="true">
+                            <apex:selectOptions value="{!IndustryOptions}" />
+                        </apex:selectList><br /><br />
+                        
+                        <apex:outputLabel value="Opportunity Type" />
+                        <apex:selectList value="{!opportunityType}" size="1" required="true">
+                            <apex:selectOptions value="{!OpportunityTypeOptions}" />
+                        </apex:selectList><br /><br />
+
+                        <apex:outputLabel value="Notes" />
+                        <apex:inputTextArea value="{!notes}" />
+
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

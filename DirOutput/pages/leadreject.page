@@ -1,0 +1,41 @@
+<apex:page standardController="Lead" extensions="LeadButtonRenderer" >
+    <apex:form >
+        <apex:pageBlock title="Lead Rejection">
+            <apex:pageBlockSection title="Lead Rejection Reasons" collapsible="false">
+               <apex:inputField value="{!lead2.Factors__c}" required="true"/>
+               <apex:inputField value="{!lead2.Comments__c}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                 
+                 <apex:commandButton title="Reject open lead." 
+                    id="RejectOpenLead"
+                    value="Reject" 
+                    action="{!RejectOpenLead}" 
+                    rendered="{!CanRejectOpenLead}" />
+                    
+                <apex:commandButton title="Reject lead." 
+                    id="RejectAcceptedLead"
+                    value="Reject" 
+                    action="{!RejectAcceptedLead}" 
+                    rendered="{!CanRejectAcceptedLead}" />
+
+              
+
+               <apex:commandButton title="Reject interested lead." 
+                   id="RejectInterestedLead"
+                   value="Reject"
+                   action="{!RejectInterestedLead}" 
+                   rendered="{!CanRejectInterestedLead}" />
+                    
+                <apex:commandButton title="Reject the lead." 
+                    id="RejectQualifiedLead"
+                    value="Reject"
+                    action="{!RejectQualifiedLead}" 
+                    rendered="{!CanRejectQualifiedLead}"   />
+                    
+                    
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

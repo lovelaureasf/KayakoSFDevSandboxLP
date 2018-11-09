@@ -1,0 +1,42 @@
+<apex:page controller="LeadHistoryReport" showHeader="false" sidebar="false"   >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <b><center><apex:outputLabel style="font-size:20px"> Total Lead Traffic </apex:outputLabel></center> </b>
+    <table style="width:100%" class="table table-striped">
+        <tr>
+            <th>Lead</th>
+            <th>Company</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Lead Source</th>
+            <th>Status</th>
+            <apex:repeat value="{!maxcolumn}" var="key">
+                <th>User</th>
+                <th>Transfer Date</th>
+            </apex:repeat>
+
+        </tr>
+        <apex:repeat value="{!leaddetails}" var="key">
+            <apex:variable value="0" var="num"/>    
+            <tr style="line-heigt:15px">
+                <td> {!key} </td>
+                <apex:repeat value="{!leaddetails[key]}" var="listItem">
+                    
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.Company} </td>
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.firstName} </td>
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.LastName} </td>
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.email} </td>
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.LeadSource} </td>
+                    <td style= "display: {!If(num=='0' ,'','none') }"> {!listItem.ld.Status} </td>
+                    <apex:variable var="num" value="{!VALUE(num) + 1}"/>
+                    <td> {!listItem.owner} </td>
+                    <td> {!listItem.transferdate} </td>
+                </apex:repeat>
+            </tr>
+        </apex:repeat>
+    </table>
+
+</apex:page>
