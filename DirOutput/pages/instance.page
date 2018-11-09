@@ -1,6 +1,0 @@
-<apex:page standardController="Instance__c" extensions="InstanceController" action="{!getData}">
-  <apex:form >
-      <apex:detail />
-  </apex:form>
- 
-</apex:page>

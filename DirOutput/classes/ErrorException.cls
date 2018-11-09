@@ -1,1 +1,0 @@
-public class ErrorException extends Exception {}

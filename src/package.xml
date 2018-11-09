@@ -4,12 +4,12 @@
         <members>*</members>
         <name>ApexClass</name>
     </types>-->
-    <types>
+    <!--<types>
         <members>*</members>
         <name>ApexComponent</name>
-    </types>
+    </types>-->
     <types>
-        <members>*</members>
+        <members>accountinfopage</members>
         <name>ApexPage</name>
     </types>
     <!--<types>
