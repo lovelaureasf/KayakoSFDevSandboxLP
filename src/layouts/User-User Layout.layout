@@ -34,6 +34,10 @@
                 <behavior>Edit</behavior>
                 <field>End_Time__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>X2_day_Coverage__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

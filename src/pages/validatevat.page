@@ -1,4 +1,0 @@
-<apex:page standardController="zqu__Quote__c" extensions="ValidateVATValidation" sidebar="false" showHeader="false" action="{!validate}">
-  <apex:pageMessages >
-  </apex:pageMessages>
-</apex:page>

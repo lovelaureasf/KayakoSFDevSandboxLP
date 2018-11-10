@@ -140,6 +140,14 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Time</type>
     </fields>
+    <fields>
+        <fullName>X2_day_Coverage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>2 day Coverage</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
     <listViews>
         <fullName>ActiveUsers</fullName>
         <columns>CORE.USERS.FORECAST_ENABLED</columns>

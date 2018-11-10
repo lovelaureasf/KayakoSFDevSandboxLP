@@ -170,8 +170,17 @@ public class LeadTriggerHandler
                         {
                             DateTime dtStartTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.Start_Time__c);
                             DateTime dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.End_Time__c);
-                            system.debug('@@@ start time' + dtStartTime);
-                            system.debug('@@@ end time' + dtEndTime);
+                            if(usr.End_Time__c.hour() < usr.Start_Time__c.hour())
+                            {
+                                if(DateTime.now().timeGmt().hour() < usr.Start_Time__c.hour())
+                                {
+                                    dtStartTime =  DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(-1), usr.Start_Time__c);
+                                }
+                                else
+                                    dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(1), usr.End_Time__c);
+                            }   
+                            system.debug('@@@ start time under capacity full' + dtStartTime);
+                            system.debug('@@@ end time under capatity full' + dtEndTime);   
                             
                             if(usr.KA_LeadCounter__c == 0 && System.now()>=dtStartTime && System.now()<= dtEndTime)
                             {
@@ -197,6 +206,15 @@ public class LeadTriggerHandler
                             {
                                 DateTime dtStartTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.Start_Time__c);
                                 DateTime dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.End_Time__c);
+                                if(usr.End_Time__c.hour() < usr.Start_Time__c.hour())
+                                {
+                                    if(DateTime.now().timeGmt().hour() < usr.Start_Time__c.hour())
+                                    {
+                                        dtStartTime =  DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(-1), usr.Start_Time__c);
+                                    }
+                                    else
+                                        dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(1), usr.End_Time__c);
+                                }
                                 system.debug('@@@ start time under capacity full' + dtStartTime);
                                 system.debug('@@@ end time under capatity full' + dtEndTime);
                                 system.debug('@@@ test' + DateTime.newInstanceGMT(Date.today(), usr.Start_Time__c));
@@ -238,6 +256,15 @@ public class LeadTriggerHandler
                     {
                         DateTime dtStartTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.Start_Time__c);
                         DateTime dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.End_Time__c);
+                        if(usr.End_Time__c.hour() < usr.Start_Time__c.hour())
+                        {
+                            if(DateTime.now().timeGmt().hour() < usr.Start_Time__c.hour())
+                            {
+                                dtStartTime =  DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(-1), usr.Start_Time__c);
+                            }
+                            else
+                                dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(1), usr.End_Time__c);
+                        }
                         system.debug('@@@ start time update' + dtStartTime);
                         system.debug('@@@ end time update' + dtEndTime);
                             
@@ -261,6 +288,15 @@ public class LeadTriggerHandler
                         {
                             DateTime dtStartTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.Start_Time__c);
                             DateTime dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt(), usr.End_Time__c);
+                            if(usr.End_Time__c.hour() < usr.Start_Time__c.hour())
+                            {
+                                if(DateTime.now().timeGmt().hour() < usr.Start_Time__c.hour())
+                                {
+                                    dtStartTime =  DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(-1), usr.Start_Time__c);
+                                }
+                                else
+                                    dtEndTime = DateTime.newInstanceGMT(DateTime.now().dateGmt().addDays(1), usr.End_Time__c);
+                            }
                             system.debug('@@@ start time under capacity full Update' + dtStartTime);
                             system.debug('@@@ end time under capatity full Update' + dtEndTime);
                             if(userfound == false && System.now()>=dtStartTime && System.now()<= dtEndTime && usr.id != ld.ownerid)
@@ -293,6 +329,12 @@ public class LeadTriggerHandler
                     leadtoUpdateMap.put(ld.id,ld);
                 }
             }
+            
+            if(leadtoUpdateMap.size()>0)
+                update leadtoUpdateMap.values();
+            
+            if(UsertoUpdate.size()>0)
+                update UsertoUpdate.values();
         }
         catch(Exception e)
         {

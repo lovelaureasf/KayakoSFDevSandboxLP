@@ -1,9 +1,7 @@
 @isTest
 public class AccountDataAccessTest
 {
-
-    
-   
+    // Testing //  
     public static TestMethod void GetFirstAccountByNameAndOwner()
     {
     

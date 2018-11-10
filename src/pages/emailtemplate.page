@@ -1,6 +1,0 @@
-<apex:page controller="EmailTemplateHandler">
-  <apex:pageBlock >
-  <b>{!message}</b> <br/>
-  <a href="/{!InstanceId }"> Click here to go back </a>
-  </apex:pageBlock> 
-</apex:page>
