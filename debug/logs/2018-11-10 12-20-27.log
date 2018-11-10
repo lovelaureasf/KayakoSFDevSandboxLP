@@ -1,0 +1,52 @@
+32.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:20:18.0 (107092)|USER_INFO|[EXTERNAL]|005p0000001vkCQ|sruti.srivastava@aurea.com.devsandbox|India Standard Time|GMT+05:30
+12:20:18.0 (143572)|EXECUTION_STARTED
+12:20:18.0 (148363)|CODE_UNIT_STARTED|[EXTERNAL]|06610000000j2PW|VF: /apex/InputLeadQualification
+12:20:18.2 (2685701)|SYSTEM_MODE_ENTER|true
+12:20:18.3 (3020929)|SYSTEM_MODE_ENTER|true
+12:20:18.3 (3237884)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (4155328)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (35786553)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:1|SELECT Id, country, Email, leadType__c, Factors__c, Comments__c, Status, CountryCode, Industry, NumberOfEmployees, OpportunityType__c, Stage__c, KA_Territory__c, HubSpot_Inc_Score__c, Company, KA_TrialExpiryDate__c, StatusToContactedDate__c, Budgeted__c, Role__c, City, PreviousOwner__c, Authority__c, CurrentSystem__c, UsedFor__c, Department__c, OwnerId, State, PostalCode, Phone, MobilePhone, HasOptedOutOfEmail, LeadSource, ManualOwnerChange__c, Reassigned_To__c, Assigned_SDR__c, Budget_determined__c, Authority_determined__c, Needs_determined__c, Timeline_determined__c, The_number_of_seats__c, Proposed_Kayako_Plan__c, infer3__Infer_Rating__c, infer3__Infer_Score__c, (SELECT Title, Body FROM Notes) FROM Lead WHERE Id = :tmpVar1 LIMIT 1
+12:20:18.0 (53661546)|SOQL_EXECUTE_END|[54]|Rows:1
+12:20:18.0 (72151883)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Name, KA_LeadCounter__c, KA_Weightage__c, IsActive, ManagerId, Profile.Name, userRoleId FROM User WHERE id = :tmpVar1 LIMIT 1
+12:20:18.0 (76576710)|SOQL_EXECUTE_END|[21]|Rows:1
+12:20:18.81 (81662695)|SYSTEM_MODE_ENTER|true
+12:20:18.81 (81869614)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (82545313)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (103413672)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (103614007)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (105298034)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (105486622)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (107122595)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (107297865)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (108905201)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (109109502)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (110660127)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (110809159)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (112441526)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (112640464)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (114765043)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (115228078)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (118850191)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (119082984)|SYSTEM_MODE_ENTER|true
+12:20:18.0 (120700640)|VF_SERIALIZE_VIEWSTATE_BEGIN|06610000000j2PW
+12:20:18.0 (123984397)|VF_SERIALIZE_VIEWSTATE_END
+12:20:18.125 (125946023)|CUMULATIVE_LIMIT_USAGE
+12:20:18.125 (125946023)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:20:18.125 (125946023)|CUMULATIVE_LIMIT_USAGE_END
+
+12:20:18.0 (125984424)|CODE_UNIT_FINISHED|VF: /apex/InputLeadQualification
+12:20:18.0 (126694041)|EXECUTION_FINISHED

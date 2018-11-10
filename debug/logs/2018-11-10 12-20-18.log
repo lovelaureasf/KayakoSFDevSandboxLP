@@ -1,0 +1,60 @@
+32.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:20:09.0 (79252)|USER_INFO|[EXTERNAL]|005p0000001vkCQ|sruti.srivastava@aurea.com.devsandbox|India Standard Time|GMT+05:30
+12:20:09.0 (117354)|EXECUTION_STARTED
+12:20:09.0 (122797)|CODE_UNIT_STARTED|[EXTERNAL]|06610000000j1OC|VF: /apex/LeadWorkflowButton
+12:20:09.0 (4046022)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (8520343)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:1|SELECT Id, country, Email, leadType__c, Factors__c, Comments__c, Status, CountryCode, Industry, NumberOfEmployees, OpportunityType__c, Stage__c, KA_Territory__c, HubSpot_Inc_Score__c, Company, KA_TrialExpiryDate__c, StatusToContactedDate__c, Budgeted__c, Role__c, City, PreviousOwner__c, Authority__c, CurrentSystem__c, UsedFor__c, Department__c, OwnerId, State, PostalCode, Phone, MobilePhone, HasOptedOutOfEmail, LeadSource, ManualOwnerChange__c, Reassigned_To__c, Assigned_SDR__c, Budget_determined__c, Authority_determined__c, Needs_determined__c, Timeline_determined__c, The_number_of_seats__c, Proposed_Kayako_Plan__c, infer3__Infer_Rating__c, infer3__Infer_Score__c, (SELECT Title, Body FROM Notes) FROM Lead WHERE Id = :tmpVar1 LIMIT 1
+12:20:09.0 (26868813)|SOQL_EXECUTE_END|[54]|Rows:1
+12:20:09.0 (30943747)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Name, KA_LeadCounter__c, KA_Weightage__c, IsActive, ManagerId, Profile.Name, userRoleId FROM User WHERE id = :tmpVar1 LIMIT 1
+12:20:09.0 (35944247)|SOQL_EXECUTE_END|[21]|Rows:1
+12:20:09.37 (37720445)|SYSTEM_MODE_ENTER|true
+12:20:09.37 (37871890)|SYSTEM_MODE_ENTER|true
+12:20:09.38 (38088172)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (38854934)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39018975)|SYSTEM_MODE_ENTER|false
+12:20:09.0 (39029615)|SYSTEM_MODE_EXIT|false
+12:20:09.0 (39187325)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39338492)|SYSTEM_MODE_ENTER|false
+12:20:09.0 (39347907)|SYSTEM_MODE_EXIT|false
+12:20:09.0 (39447410)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39581740)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39723920)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39849026)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (39985810)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (40105654)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (40211544)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (41064940)|SOQL_EXECUTE_BEGIN|[36]|Aggregations:0|SELECT ParentTerritory2.id, ParentTerritory2.Name, ParentTerritory2.DeveloperName FROM Territory2 WHERE DeveloperName = :tmpVar1 LIMIT 1
+12:20:09.0 (47953305)|SOQL_EXECUTE_END|[36]|Rows:1
+12:20:09.0 (48763362)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (48952815)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (81546160)|SOQL_EXECUTE_BEGIN|[147]|Aggregations:0|SELECT User.Id, User.KA_Weightage__c, User.KA_LeadCounter__c, RoleInTerritory2, Territory2.Id FROM UserTerritory2Association WHERE (User.Id = :tmpVar1 AND Territory2.Id = :tmpVar2 AND User.IsActive = TRUE) ORDER BY User.KA_Weightage__c DESC NULLS FIRST LIMIT 1
+12:20:09.0 (144305360)|SOQL_EXECUTE_END|[147]|Rows:0
+12:20:09.0 (168569164)|EXCEPTION_THROWN|[159]|UnderflowException: User does not exist in region Americas
+12:20:09.0 (168599848)|EXCEPTION_THROWN|[159]|UnderflowException: User does not exist in region Americas
+12:20:09.0 (169198911)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (169404798)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (170275848)|SOQL_EXECUTE_BEGIN|[20]|Aggregations:0|SELECT id, name, Instance__c, Instance__r.state__c, Instance__r.Expiry_Date__c FROM lead WHERE ((KA_Product__c = 'Growth' OR KA_Product__c = 'Enterprise' OR KA_Product__c = 'Standard' OR KA_Product__c = 'Loyalty' OR KA_Product__c = 'Inbox' OR KA_Product__c = 'Free' OR KA_Product__c = 'Team' OR KA_Product__c = 'Scale') AND id = :tmpVar1) LIMIT 1
+12:20:09.0 (175276620)|SOQL_EXECUTE_END|[20]|Rows:0
+12:20:09.178 (178885937)|SYSTEM_MODE_ENTER|true
+12:20:09.179 (179061444)|SYSTEM_MODE_ENTER|true
+12:20:09.0 (187163040)|VF_SERIALIZE_VIEWSTATE_BEGIN|06610000000j1OC
+12:20:09.0 (190641015)|VF_SERIALIZE_VIEWSTATE_END
+12:20:09.193 (193107034)|CUMULATIVE_LIMIT_USAGE
+12:20:09.193 (193107034)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:20:09.193 (193107034)|CUMULATIVE_LIMIT_USAGE_END
+
+12:20:09.0 (193147238)|CODE_UNIT_FINISHED|VF: /apex/LeadWorkflowButton
+12:20:09.0 (194000549)|EXECUTION_FINISHED

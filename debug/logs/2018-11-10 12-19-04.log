@@ -1,0 +1,783 @@
+32.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:18:54.0 (359480)|USER_INFO|[EXTERNAL]|005p0000001vkCQ|sruti.srivastava@aurea.com.devsandbox|India Standard Time|GMT+05:30
+12:18:54.0 (390926)|EXECUTION_STARTED
+12:18:54.0 (395407)|CODE_UNIT_STARTED|[EXTERNAL]|06610000000j1OC|VF: /apex/LeadWorkflowButton
+12:18:54.0 (947986)|VF_DESERIALIZE_VIEWSTATE_BEGIN|06610000000j1OC
+12:18:54.0 (21701687)|VF_DESERIALIZE_VIEWSTATE_END
+12:18:54.22 (22938014)|SYSTEM_MODE_ENTER|true
+12:18:54.23 (23978506)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (24573070)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (29224402)|SYSTEM_MODE_ENTER|false
+12:18:54.0 (29242803)|SYSTEM_MODE_EXIT|false
+12:18:54.0 (37189895)|SYSTEM_MODE_ENTER|false
+12:18:54.0 (37207190)|SYSTEM_MODE_EXIT|false
+12:18:54.0 (37774268)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (37987023)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38205382)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38341375)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38462618)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38572964)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38679955)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (38812143)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (42815148)|SOQL_EXECUTE_BEGIN|[36]|Aggregations:0|SELECT ParentTerritory2.id, ParentTerritory2.Name, ParentTerritory2.DeveloperName FROM Territory2 WHERE DeveloperName = :tmpVar1 LIMIT 1
+12:18:54.0 (51199974)|SOQL_EXECUTE_END|[36]|Rows:1
+12:18:54.0 (52342472)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (52577880)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (52739581)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (52868666)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (55055948)|SOQL_EXECUTE_BEGIN|[20]|Aggregations:0|SELECT id, name, Instance__c, Instance__r.state__c, Instance__r.Expiry_Date__c FROM lead WHERE ((KA_Product__c = 'Growth' OR KA_Product__c = 'Enterprise' OR KA_Product__c = 'Standard' OR KA_Product__c = 'Loyalty' OR KA_Product__c = 'Inbox' OR KA_Product__c = 'Free' OR KA_Product__c = 'Team' OR KA_Product__c = 'Scale') AND id = :tmpVar1) LIMIT 1
+12:18:54.0 (63651468)|SOQL_EXECUTE_END|[20]|Rows:0
+12:18:54.64 (64586767)|SYSTEM_MODE_ENTER|true
+12:18:54.0 (65316801)|USER_DEBUG|[44]|DEBUG|@@@ in accept
+12:18:54.0 (65384013)|DML_BEGIN|[52]|Op:Update|Type:Lead|Rows:1
+12:18:54.183 (183351536)|CUMULATIVE_LIMIT_USAGE
+12:18:54.183 (183351536)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.183 (183351536)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (198979900)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005CaZ|LeadTrigger on Lead trigger event BeforeUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.202 (202494551)|CUMULATIVE_LIMIT_USAGE
+12:18:54.202 (202494551)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.202 (202494551)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (203354439)|CODE_UNIT_FINISHED|LeadTrigger on Lead trigger event BeforeUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (204517515)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000MMhF|UpdateExistingCustomer on Lead trigger event BeforeUpdate|__sfdc_trigger/UpdateExistingCustomer
+12:18:54.0 (208736373)|USER_DEBUG|[22]|DEBUG|leadsource  Webinar
+12:18:54.0 (223279458)|USER_DEBUG|[34]|DEBUG|######{}
+12:18:54.0 (223322147)|USER_DEBUG|[35]|DEBUG|######{1541819277345test30mins@test.com}
+12:18:54.0 (227349657)|SOQL_EXECUTE_BEGIN|[36]|Aggregations:0|SELECT id, name, Family__c, Zuora__CustomerAccount__r.Zuora__BillToWorkEmail__c FROM Zuora__Subscription__c 
+12:18:54.0 (344612154)|SOQL_EXECUTE_END|[36]|Rows:446
+12:18:54.0 (383342201)|USER_DEBUG|[43]|DEBUG|map 1{null=(Zuora__Subscription__c:{Id=a16p00000021hRQAAY, Name=A-S00001765, Zuora__CustomerAccount__c=a0up00000026VtZAAU}, Zuora__Subscription__c:{Id=a16p00000021hRLAAY, Name=A-S00001764, Zuora__CustomerAccount__c=a0up00000026VtYAAU}, Zuora__Subscription__c:{Id=a16p0000002EfIJAA0, Name=A-S00001795, Zuora__CustomerAccount__c=a0up00000026mwxAAA}), accounts@worldhubcom.com=(Zuora__Subscription__c:{Id=a161000000AOC2XAAX, Name=A-S00002392, Zuora__CustomerAccount__c=a0u10000004xGGiAAM}), adam.howard@nimans.net=(Zuora__Subscription__c:{Id=a161000000AOBIWAA5, Name=A-S00002593, Zuora__CustomerAccount__c=a0u10000004xFWtAAM}), adam.lach@kopex.com.pl=(Zuora__Subscription__c:{Id=a161000000AOB1KAAX, Name=A-S00004384, Zuora__CustomerAccount__c=a0u10000004xFJmAAM}), adam@gamwelltech.com=(Zuora__Subscription__c:{Id=a161000000AOBVyAAP, Name=A-S00004751, Zuora__CustomerAccount__c=a0u10000004xFWiAAM}), adearing@cumulusnine.com=(Zuora__Subscription__c:{Id=a161000000AOAx7AAH, Name=A-S00004046, Zuora__CustomerAccount__c=a0u10000004xFHiAAM}), ademir.hernandez@grupoferromax.com=(Zuora__Subscription__c:{Id=a161000000AOBNWAA5, Name=A-S00002736, Zuora__CustomerAccount__c=a0u10000004xG1BAAU}), adirgan@gmail.com=(Zuora__Subscription__c:{Id=a161000000B4zR1AAJ, Name=A-S00007400, Zuora__CustomerAccount__c=a0u10000004I2JMAA0}), admin@coredesktop.com=(Zuora__Subscription__c:{Id=a161000000AOC5qAAH, Name=A-S00005623, Zuora__CustomerAccount__c=a0u10000004xG30AAE}), admin@mightyscripts.com=(Zuora__Subscription__c:{Id=a161000000BH3qSAAT, Name=A-S00006953, Zuora__CustomerAccount__c=a0u10000004ksUoAAI}), ...}
+12:18:54.0 (383915219)|SOQL_EXECUTE_BEGIN|[45]|Aggregations:0|SELECT id, name, Family__c, Zuora__CustomerAccount__r.Zuora__BillToWorkEmail__c FROM Zuora__Subscription__c 
+12:18:54.0 (451471965)|SOQL_EXECUTE_END|[45]|Rows:446
+12:18:54.0 (503484480)|USER_DEBUG|[56]|DEBUG|mapOfEmailDomain{2020itsolutions.com=(Zuora__Subscription__c:{Id=a161000000AOBbqAAH, Name=A-S00005052, Zuora__CustomerAccount__c=a0u10000004xFbVAAU}), 219design.co.uk=(Zuora__Subscription__c:{Id=a161000000BFXtgAAH, Name=A-S00006769, Zuora__CustomerAccount__c=a0u10000004kN0eAAE}), 4one.digital=(Zuora__Subscription__c:{Id=a161000000AyYNmAAN, Name=A-S00006480, Zuora__CustomerAccount__c=a0u10000005ArW4AAK}), 5linx.com=(Zuora__Subscription__c:{Id=a16p00000021hQnAAI, Name=A-S00001480, Zuora__CustomerAccount__c=a0up00000026Vt5AAE}), a2-c.ch=(Zuora__Subscription__c:{Id=a161000000AOBVJAA5, Name=A-S00004717, Zuora__CustomerAccount__c=a0u10000004xFWHAA2}), a2ktechnologies.com.au=(Zuora__Subscription__c:{Id=a161000000AOBKOAA5, Name=A-S00003492, Zuora__CustomerAccount__c=a0u10000004xFRQAA2}), achieve-technology.com=(Zuora__Subscription__c:{Id=a161000000AOBOXAA5, Name=A-S00003101, Zuora__CustomerAccount__c=a0u10000004xGE9AAM}), activelogix.com=(Zuora__Subscription__c:{Id=a161000000AOBwbAAH, Name=A-S00003203, Zuora__CustomerAccount__c=a0u10000004xGJoAAM}), actorsfund.org=(Zuora__Subscription__c:{Id=a161000000AOBWcAAP, Name=A-S00000809, Zuora__CustomerAccount__c=a0u10000004xFX4AAM}), aerotek.com.tr=(Zuora__Subscription__c:{Id=a1610000009jBYlAAM, Name=A-S00006237, Zuora__CustomerAccount__c=a0u100000059wk3AAA}), ...}
+12:18:54.0 (503710089)|USER_DEBUG|[62]|DEBUG|$$$$$$1541819277345test30mins@test.com
+12:18:54.0 (503792265)|USER_DEBUG|[76]|DEBUG|domain not found!!!!!! ok now look for the exact match
+12:18:54.0 (503858611)|USER_DEBUG|[89]|DEBUG|in the domain search block and domain is present
+12:18:54.504 (504113844)|CUMULATIVE_LIMIT_USAGE
+12:18:54.504 (504113844)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 893 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 76 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.504 (504113844)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (505153632)|CODE_UNIT_FINISHED|UpdateExistingCustomer on Lead trigger event BeforeUpdate|__sfdc_trigger/UpdateExistingCustomer
+12:18:54.0 (506352543)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000V3cc|CopyEmailtoUniqueEmail on Lead trigger event BeforeUpdate|__sfdc_trigger/CopyEmailtoUniqueEmail
+12:18:54.506 (506617237)|CUMULATIVE_LIMIT_USAGE
+12:18:54.506 (506617237)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 893 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 76 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.506 (506617237)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (507698022)|CODE_UNIT_FINISHED|CopyEmailtoUniqueEmail on Lead trigger event BeforeUpdate|__sfdc_trigger/CopyEmailtoUniqueEmail
+12:18:54.0 (516427775)|CODE_UNIT_STARTED|[EXTERNAL]|Validation:Lead:00Qp0000004BesD
+12:18:54.0 (516449656)|VALIDATION_RULE|03d10000000Vdzi|Address_information_required
+12:18:54.0 (516624399)|VALIDATION_FORMULA|AND (
+ISCHANGED(Status), 
+ISPICKVAL(Status, 'Interested') 
+&& 
+(City = "" &#124;&#124;  PostalCode  = "")
+)|Status=Open , PostalCode=null , City=null
+12:18:54.0 (516634790)|VALIDATION_PASS
+12:18:54.0 (516637213)|VALIDATION_RULE|03d10000000VeIV|Lead_Source_field_is_blank
+12:18:54.0 (516730316)|VALIDATION_FORMULA|TEXT(Stage__c) = "SAL" && TEXT(Status) = "Open"
+&& 
+ISPICKVAL( LeadSource , "")|Status=Open , LeadSource=Webinar , Stage__c=SAL
+12:18:54.0 (516737952)|VALIDATION_PASS
+12:18:54.0 (516739698)|VALIDATION_RULE|03dp00000005n5t|Lock_User_for_SLA_Breach
+12:18:54.0 (520108019)|VALIDATION_FORMULA|if(AND( NOT(SLA_Breached__c), NOT( IsResponded__c ), OR($Profile.Name = "Account Executive", $Profile.Name = "Sales Development Representative" ) , (SDR_Assign_Date__c > DATETIMEVALUE("2018-10-28 19:15:00") ) ,(( NOW()-SDR_Assign_Date__c )*24*60)>20),true,false)|IsResponded__c=0 , $Profile.Name=System Administrator , SLA_Breached__c=1 , SDR_Assign_Date__c=2018-11-10 03:07:58
+12:18:54.0 (520121278)|VALIDATION_PASS
+12:18:54.0 (520123437)|VALIDATION_RULE|03d10000000Ve4E|Phone_number_in_right_format
+12:18:54.0 (520212219)|VALIDATION_FORMULA|AND ( 
+ISCHANGED(Status), 
+ISPICKVAL(Status, 'Contacted') 
+&& 
+LEFT(Phone, 1) <> "+")|Status=Open , Phone=null
+12:18:54.0 (520219327)|VALIDATION_PASS
+12:18:54.0 (520590563)|CODE_UNIT_FINISHED|Validation:Lead:00Qp0000004BesD
+12:18:54.640 (640785839)|SOQL_EXECUTE_BEGIN|[462]|Aggregations:0|SELECT Account__c, Contact__c, Lead__c FROM Visitor_Sessions__c p WHERE Lead__c = :tmpVar1
+12:18:54.640 (642381470)|SOQL_EXECUTE_END|[462]|Rows:0
+12:18:54.640 (646113233)|SOQL_EXECUTE_BEGIN|[495]|Aggregations:0|SELECT MasterLabel, cloudamp__Contact_Field_API__c FROM cloudamp__Lead_Contact_Mapped_Fields__mdt
+12:18:54.640 (649090793)|SOQL_EXECUTE_END|[495]|Rows:22
+12:18:54.640 (653534005)|SOQL_EXECUTE_BEGIN|[503]|Aggregations:0|SELECT Id , cloudamp__GA_Campaign__c, cloudamp__GA_Content__c, cloudamp__GA_Medium__c, cloudamp__GA_Source__c, cloudamp__GA_Term__c, cloudamp__Keyword__c, cloudamp__Lead_Source_Type__c, cloudamp__Paid_Search__c, cloudamp__Referrer__c, cloudamp__Search_Engine__c, cloudamp__gclid__c, cloudamp__Last_UTM_Campaign__c, cloudamp__Last_UTM_Content__c, cloudamp__Last_UTM_Medium__c, cloudamp__Last_UTM_Source__c, cloudamp__Last_UTM_Term__c, cloudamp__last_Keyword__c, cloudamp__last_Lead_Source_Type__c, cloudamp__last_Paid_Search__c, cloudamp__last_Referrer__c, cloudamp__last_Search_Engine__c, cloudamp__last_gclid__c FROM Contact WHERE Id IN :convertedLeadIds
+12:18:54.640 (659615208)|SOQL_EXECUTE_END|[503]|Rows:0
+12:18:54.659 (659915614)|CUMULATIVE_LIMIT_USAGE
+12:18:54.659 (659915614)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 893 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.659 (659915614)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.659 (659915614)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.662 (662703023)|CUMULATIVE_LIMIT_USAGE
+12:18:54.662 (662703023)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 893 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.662 (662703023)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.662 (662703023)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.669 (669541054)|CUMULATIVE_LIMIT_USAGE
+12:18:54.669 (669541054)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 893 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.669 (669541054)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.669 (669541054)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (671300041)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005CaZ|LeadTrigger on Lead trigger event AfterUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (671970293)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:0|SELECT id, Assigned_SDR__c, Assigned_SDR__r.id, ownerid, Status, SDR_First_Modified_Date_Time__c, IsResponded__c, SLA_Breached__c, Reassigned_To__c, LeadSource, createdById FROM lead WHERE id = :tmpVar1
+12:18:54.0 (678277178)|SOQL_EXECUTE_END|[54]|Rows:1
+12:18:54.0 (678444420)|USER_DEBUG|[60]|DEBUG|@@ Demo Lead operation
+12:18:54.678 (678665629)|CUMULATIVE_LIMIT_USAGE
+12:18:54.678 (678665629)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 894 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.678 (678665629)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.678 (678665629)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (679566716)|CODE_UNIT_FINISHED|LeadTrigger on Lead trigger event AfterUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (680676709)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000R7mf|SendSyncRequestOnInstanceChange on Lead trigger event AfterUpdate|__sfdc_trigger/SendSyncRequestOnInstanceChange
+12:18:54.680 (680925142)|CUMULATIVE_LIMIT_USAGE
+12:18:54.680 (680925142)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 5 out of 100
+  Number of query rows: 894 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.680 (680925142)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.680 (680925142)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (681651250)|CODE_UNIT_FINISHED|SendSyncRequestOnInstanceChange on Lead trigger event AfterUpdate|__sfdc_trigger/SendSyncRequestOnInstanceChange
+12:18:54.0 (682670336)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005aCt|LeadAssignment on Lead trigger event AfterUpdate|__sfdc_trigger/LeadAssignment
+12:18:54.0 (683221149)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:0|SELECT id, Assigned_SDR__c, Assigned_SDR__r.id, ownerid, Status, SDR_First_Modified_Date_Time__c, IsResponded__c, SLA_Breached__c, Reassigned_To__c, LeadSource, createdById FROM lead WHERE id = :tmpVar1
+12:18:54.0 (687743341)|SOQL_EXECUTE_END|[54]|Rows:1
+12:18:54.0 (687913489)|USER_DEBUG|[60]|DEBUG|@@ Demo Lead operation
+12:18:54.688 (688024023)|CUMULATIVE_LIMIT_USAGE
+12:18:54.688 (688024023)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.688 (688024023)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.688 (688024023)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (688920853)|CODE_UNIT_FINISHED|LeadAssignment on Lead trigger event AfterUpdate|__sfdc_trigger/LeadAssignment
+12:18:54.0 (689214220)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Lead
+12:18:54.0 (696435106)|WF_RULE_EVAL_BEGIN|Assignment
+12:18:54.0 (696453268)|WF_SPOOL_ACTION_BEGIN|Assignment
+12:18:54.0 (696465656)|WF_ACTION|.
+12:18:54.0 (696472324)|WF_RULE_EVAL_END
+12:18:54.0 (696485140)|WF_RULE_EVAL_BEGIN|Workflow
+12:18:54.0 (696571242)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|1st Notification|01Qp000000060wu|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (701276349)|WF_RULE_NOT_EVALUATED
+12:18:54.0 (701293425)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Status Last Updated Updater|01Q10000000NpD0|ON_ALL_CHANGES|0
+12:18:54.0 (701603705)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]ISCHANGED( {!ID:Status} )|Values:Status=Open
+12:18:54.0 (701612695)|WF_CRITERIA_END|false
+12:18:54.0 (701628233)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Lead Status marked as Interested|01Q10000000Udm4|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (701721726)|WF_RULE_FILTER|[Lead : Lead Status equals Interested] 
+AND [Lead : Stage equals SAL]
+12:18:54.0 (701735677)|WF_RULE_EVAL_VALUE|Open
+12:18:54.0 (701740348)|WF_CRITERIA_END|false
+12:18:54.0 (701750103)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Update Drip Included Date|01Q10000000QMb2|ON_CREATE_ONLY|0
+12:18:54.0 (701760216)|WF_RULE_NOT_EVALUATED
+12:18:54.0 (701765551)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Lead moved to SQL Qualified|01Q10000000NoZe|ON_ALL_CHANGES|0
+12:18:54.0 (701804892)|WF_RULE_FILTER|[Lead : Stage equals SQL] 
+AND [Lead : Lead Status equals Qualified]
+12:18:54.0 (701817588)|WF_RULE_EVAL_VALUE|2
+12:18:54.0 (701821154)|WF_CRITERIA_END|false
+12:18:54.0 (701829762)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Lead: Returned by AE|01Q10000000Udms|ON_ALL_CHANGES|0
+12:18:54.0 (701868031)|WF_RULE_FILTER|[Lead : Lead Status equals Contacted] 
+AND [Lead : Previous Owner equals AE]
+12:18:54.0 (701876932)|WF_RULE_EVAL_VALUE|Open
+12:18:54.0 (701881101)|WF_CRITERIA_END|false
+12:18:54.0 (701888907)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|2nd Notification|01Qp000000060xO|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (701946522)|WF_RULE_FILTER|[Lead : SLA Breached equals false] 
+AND [Lead : IsResponded equals false]
+12:18:54.0 (701953351)|WF_RULE_EVAL_VALUE|true
+12:18:54.0 (701956604)|WF_CRITERIA_END|false
+12:18:54.0 (701963689)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|3rd Notification|01Qp0000000610I|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (702008588)|WF_RULE_FILTER|[Lead : SLA Breached equals false] 
+AND [Lead : IsResponded equals false]
+12:18:54.0 (702014180)|WF_RULE_EVAL_VALUE|true
+12:18:54.0 (702017742)|WF_CRITERIA_END|false
+12:18:54.0 (702025237)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Copy owner email|01Q100000005qOF|ON_ALL_CHANGES|0
+12:18:54.0 (702050580)|WF_RULE_FILTER|[Lead : Owner Last Name not equal to null]
+12:18:54.0 (702056996)|WF_RULE_EVAL_VALUE|
+12:18:54.0 (702059097)|WF_CRITERIA_END|true
+12:18:54.0 (702776523)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Clear Date fields when lead comes to SAL|01Q10000000NoZU|ON_ALL_CHANGES|0
+12:18:54.0 (703036134)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]AND(ISPICKVAL({!ID:00N10000006Qxri},"SAL"),ISPICKVAL( {!ID:Status} ,"Open"))|Values:Status=Open, Stage__c=SAL
+12:18:54.0 (703045826)|WF_CRITERIA_END|true
+12:18:54.0 (703070588)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|4th Notification|01Qp0000000614F|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (703109596)|WF_RULE_NOT_EVALUATED
+12:18:54.0 (703119208)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Update Drip Included Date On Edit|01Q10000000QMiD|ON_ALL_CHANGES|0
+12:18:54.0 (703490870)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]AND(NOT(ISNEW()),CONTAINS( {!ID:$User.FirstName} ,"Backend"),NOT(ISNULL({!ID:00N10000006pOgk})), NOT(PRIORVALUE({!ID:00N10000006pOgk})== {!ID:00N10000006pOgk}))|Values:$User.FirstName=Sruti, Instance__c=null
+12:18:54.0 (703500474)|WF_CRITERIA_END|false
+12:18:54.0 (703515472)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Stage Last Updated Updater|01Q10000000NpCv|ON_ALL_CHANGES|0
+12:18:54.0 (703639560)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]ISCHANGED( {!ID:00N10000006Qxri} )|Values:Stage__c=SAL
+12:18:54.0 (703647547)|WF_CRITERIA_END|true
+12:18:54.0 (703665177)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Lead Status changed to Qualified|01Q10000000Udmn|ON_CREATE_OR_TRIGGERING_UPDATE|0
+12:18:54.0 (703731459)|WF_RULE_FILTER|[Lead : Lead Status equals Qualified] 
+AND [Lead : Stage equals SQL]
+12:18:54.0 (703742004)|WF_RULE_EVAL_VALUE|Open
+12:18:54.0 (703746081)|WF_CRITERIA_END|false
+12:18:54.0 (703755462)|WF_CRITERIA_BEGIN|[Lead: Lead 1541819277345 00Qp0000004BesD]|Clear Date fields when lead comes from SRL/SDL to MQL|01Q10000000QMbW|ON_ALL_CHANGES|0
+12:18:54.0 (703946760)|WF_FORMULA|Formula:ENCODED:[treatNullAsNull]AND(OR(ISPICKVAL(PRIORVALUE({!ID:00N10000006Qxri}),"SRL"),ISPICKVAL(PRIORVALUE({!ID:00N10000006Qxri}),"SDL")),ISPICKVAL({!ID:00N10000006Qxri},"MQL"))|Values:Stage__c=SAL
+12:18:54.0 (703955669)|WF_CRITERIA_END|false
+12:18:54.0 (703975281)|WF_SPOOL_ACTION_BEGIN|Workflow
+12:18:54.0 (704659856)|WF_FIELD_UPDATE|[Lead: Lead 1541819277345 00Qp0000004BesD]|Field:Lead: Status Last Updated Date|Value:Sat Nov 10 00:00:00 GMT 2018|Id=04Y10000000PutN|CurrentRule:Clear Date fields when lead comes to SAL (Id=01Q10000000NoZU)
+12:18:54.0 (704729823)|WF_ACTION| Field Update: 10;
+12:18:54.0 (704735691)|WF_RULE_EVAL_END
+12:18:54.707 (707198146)|CUMULATIVE_LIMIT_USAGE
+12:18:54.707 (707198146)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.707 (707198146)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.707 (707198146)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (709401140)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005CaZ|LeadTrigger on Lead trigger event BeforeUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.709 (709558593)|CUMULATIVE_LIMIT_USAGE
+12:18:54.709 (709558593)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.709 (709558593)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.709 (709558593)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (710273062)|CODE_UNIT_FINISHED|LeadTrigger on Lead trigger event BeforeUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (711266283)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000MMhF|UpdateExistingCustomer on Lead trigger event BeforeUpdate|__sfdc_trigger/UpdateExistingCustomer
+12:18:54.711 (711385835)|CUMULATIVE_LIMIT_USAGE
+12:18:54.711 (711385835)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.711 (711385835)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.711 (711385835)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (712085349)|CODE_UNIT_FINISHED|UpdateExistingCustomer on Lead trigger event BeforeUpdate|__sfdc_trigger/UpdateExistingCustomer
+12:18:54.0 (713075613)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000V3cc|CopyEmailtoUniqueEmail on Lead trigger event BeforeUpdate|__sfdc_trigger/CopyEmailtoUniqueEmail
+12:18:54.713 (713285937)|CUMULATIVE_LIMIT_USAGE
+12:18:54.713 (713285937)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.713 (713285937)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 22 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.713 (713285937)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (714250729)|CODE_UNIT_FINISHED|CopyEmailtoUniqueEmail on Lead trigger event BeforeUpdate|__sfdc_trigger/CopyEmailtoUniqueEmail
+12:18:54.734 (734225611)|SOQL_EXECUTE_BEGIN|[462]|Aggregations:0|SELECT Account__c, Contact__c, Lead__c FROM Visitor_Sessions__c p WHERE Lead__c = :tmpVar1
+12:18:54.734 (735879089)|SOQL_EXECUTE_END|[462]|Rows:0
+12:18:54.734 (737762672)|SOQL_EXECUTE_BEGIN|[495]|Aggregations:0|SELECT MasterLabel, cloudamp__Contact_Field_API__c FROM cloudamp__Lead_Contact_Mapped_Fields__mdt
+12:18:54.734 (739645212)|SOQL_EXECUTE_END|[495]|Rows:22
+12:18:54.734 (741236419)|SOQL_EXECUTE_BEGIN|[503]|Aggregations:0|SELECT Id , cloudamp__GA_Campaign__c, cloudamp__GA_Content__c, cloudamp__GA_Medium__c, cloudamp__GA_Source__c, cloudamp__GA_Term__c, cloudamp__Keyword__c, cloudamp__Lead_Source_Type__c, cloudamp__Paid_Search__c, cloudamp__Referrer__c, cloudamp__Search_Engine__c, cloudamp__gclid__c, cloudamp__Last_UTM_Campaign__c, cloudamp__Last_UTM_Content__c, cloudamp__Last_UTM_Medium__c, cloudamp__Last_UTM_Source__c, cloudamp__Last_UTM_Term__c, cloudamp__last_Keyword__c, cloudamp__last_Lead_Source_Type__c, cloudamp__last_Paid_Search__c, cloudamp__last_Referrer__c, cloudamp__last_Search_Engine__c, cloudamp__last_gclid__c FROM Contact WHERE Id IN :convertedLeadIds
+12:18:54.734 (745176532)|SOQL_EXECUTE_END|[503]|Rows:0
+12:18:54.745 (745394044)|CUMULATIVE_LIMIT_USAGE
+12:18:54.745 (745394044)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.745 (745394044)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.745 (745394044)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.747 (747936463)|CUMULATIVE_LIMIT_USAGE
+12:18:54.747 (747936463)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.747 (747936463)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.747 (747936463)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.752 (752425907)|CUMULATIVE_LIMIT_USAGE
+12:18:54.752 (752425907)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 6 out of 100
+  Number of query rows: 895 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.752 (752425907)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.752 (752425907)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (754208770)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005CaZ|LeadTrigger on Lead trigger event AfterUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (754781897)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:0|SELECT id, Assigned_SDR__c, Assigned_SDR__r.id, ownerid, Status, SDR_First_Modified_Date_Time__c, IsResponded__c, SLA_Breached__c, Reassigned_To__c, LeadSource, createdById FROM lead WHERE id = :tmpVar1
+12:18:54.0 (759705595)|SOQL_EXECUTE_END|[54]|Rows:1
+12:18:54.0 (759813856)|USER_DEBUG|[60]|DEBUG|@@ Demo Lead operation
+12:18:54.759 (759931509)|CUMULATIVE_LIMIT_USAGE
+12:18:54.759 (759931509)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 896 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.759 (759931509)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.759 (759931509)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (760722047)|CODE_UNIT_FINISHED|LeadTrigger on Lead trigger event AfterUpdate|__sfdc_trigger/LeadTrigger
+12:18:54.0 (761769222)|CODE_UNIT_STARTED|[EXTERNAL]|01q10000000R7mf|SendSyncRequestOnInstanceChange on Lead trigger event AfterUpdate|__sfdc_trigger/SendSyncRequestOnInstanceChange
+12:18:54.761 (761988921)|CUMULATIVE_LIMIT_USAGE
+12:18:54.761 (761988921)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 7 out of 100
+  Number of query rows: 896 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.761 (761988921)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.761 (761988921)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (762685213)|CODE_UNIT_FINISHED|SendSyncRequestOnInstanceChange on Lead trigger event AfterUpdate|__sfdc_trigger/SendSyncRequestOnInstanceChange
+12:18:54.0 (763660499)|CODE_UNIT_STARTED|[EXTERNAL]|01qp00000005aCt|LeadAssignment on Lead trigger event AfterUpdate|__sfdc_trigger/LeadAssignment
+12:18:54.0 (764183108)|SOQL_EXECUTE_BEGIN|[54]|Aggregations:0|SELECT id, Assigned_SDR__c, Assigned_SDR__r.id, ownerid, Status, SDR_First_Modified_Date_Time__c, IsResponded__c, SLA_Breached__c, Reassigned_To__c, LeadSource, createdById FROM lead WHERE id = :tmpVar1
+12:18:54.0 (768545904)|SOQL_EXECUTE_END|[54]|Rows:1
+12:18:54.0 (768647077)|USER_DEBUG|[60]|DEBUG|@@ Demo Lead operation
+12:18:54.768 (768730350)|CUMULATIVE_LIMIT_USAGE
+12:18:54.768 (768730350)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 897 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.768 (768730350)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.768 (768730350)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (769504391)|CODE_UNIT_FINISHED|LeadAssignment on Lead trigger event AfterUpdate|__sfdc_trigger/LeadAssignment
+12:18:54.0 (780078795)|WF_TIME_TRIGGERS_BEGIN
+12:18:54.0 (803946159)|WF_ACTIONS_END| Field Update: 10;
+12:18:54.0 (803970495)|CODE_UNIT_FINISHED|Workflow:Lead
+12:18:54.0 (810694681)|DML_END|[52]
+12:18:54.907 (907687695)|CUMULATIVE_LIMIT_USAGE
+12:18:54.907 (907687695)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 8 out of 100
+  Number of query rows: 897 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 212 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.907 (907687695)|LIMIT_USAGE_FOR_NS|cloudamp|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 44 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:54.907 (907687695)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:54.0 (907768602)|CODE_UNIT_FINISHED|VF: /apex/LeadWorkflowButton
+12:18:54.0 (908626599)|EXECUTION_FINISHED

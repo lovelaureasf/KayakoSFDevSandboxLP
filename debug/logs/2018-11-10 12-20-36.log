@@ -1,0 +1,100 @@
+22.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:20:28.10 (10783053)|SOQL_EXECUTE_BEGIN|[46]|Aggregations:0|select id, LastModifiedDate, lead_grade__c, first_conversion_date__c, first_conversion_event__c, recent_conversion_date__c, recent_conversion_event__c, guid__c, found_site_via__c, hubspot_detail__c, ip_address__c, conversion_events__c, website_visits__c, total_page_views__c, first_visit__c, recent_visit__c, lead__c, contact__c, ip_region__c, ip_city__c, ip_country__c, portal_id__c from HubSpot_Intelligence__c where Lead__c ='00Qp0000004BesD'
+12:20:28.10 (17506074)|SOQL_EXECUTE_END|[46]|Rows:0
+12:20:28.10 (18796882)|SOQL_EXECUTE_BEGIN|[46]|Aggregations:0|select id, LastModifiedDate, lead_grade__c, first_conversion_date__c, first_conversion_event__c, recent_conversion_date__c, recent_conversion_event__c, guid__c, found_site_via__c, hubspot_detail__c, ip_address__c, conversion_events__c, website_visits__c, total_page_views__c, first_visit__c, recent_visit__c, lead__c, contact__c, ip_region__c, ip_city__c, ip_country__c, portal_id__c from HubSpot_Intelligence__c where Lead__c ='00Qp0000004BesD'
+12:20:28.10 (22323710)|SOQL_EXECUTE_END|[46]|Rows:0
+12:20:28.31 (31231780)|CUMULATIVE_LIMIT_USAGE
+12:20:28.31 (31231780)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:20:28.31 (31231780)|LIMIT_USAGE_FOR_NS|HubSpot_Inc|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:20:28.31 (31231780)|CUMULATIVE_LIMIT_USAGE_END
+
+7p000004u4rDcAAI, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=null, NewValue=2018-11-10 00:00:00}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=Owner, Id=017p000004u4rDZAAY, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=Michael Smith, NewValue=Kerryann Tomas}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=Owner, Id=017p000004u4rDaAAI, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=00510000008AOFXAA4, NewValue=005p0000002JlTLAA0}, ...)
+12:20:28.0 (39465327)|USER_DEBUG|[81]|DEBUG|the value of mql2sal is2018-11-10 06:48:55
+12:20:28.0 (39671878)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (39862991)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (39935310)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40022242)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40297295)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40383845)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40531268)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40611743)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40740182)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40818851)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (40975029)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41054143)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41111314)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41194328)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41285639)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41372687)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41521151)|USER_DEBUG|[113]|DEBUG|Case1
+12:20:28.0 (41569916)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41650618)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41780597)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41857680)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41913942)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (41990374)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42044991)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42120933)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42190623)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42293352)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42351509)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42428118)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42481805)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42557030)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:20:28.0 (42945034)|SOQL_EXECUTE_BEGIN|[181]|Aggregations:0|SELECT id FROM UserRole 
+12:20:28.0 (46912864)|SOQL_EXECUTE_END|[181]|Rows:2
+12:20:28.0 (49449184)|SOQL_EXECUTE_BEGIN|[185]|Aggregations:0|SELECT id, name FROM user WHERE (id = :tmpVar1 AND UserRoleId IN :tmpVar2) LIMIT 1
+12:20:28.0 (53959546)|SOQL_EXECUTE_END|[185]|Rows:1
+12:20:28.0 (54288398)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (54954067)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (55828227)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (56474856)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (64257831)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (64628604)|SYSTEM_MODE_ENTER|true
+12:20:28.0 (66347705)|VF_SERIALIZE_VIEWSTATE_BEGIN|06610000001Hj2u
+12:20:28.0 (69513375)|VF_SERIALIZE_VIEWSTATE_END
+12:20:28.72 (72330441)|CUMULATIVE_LIMIT_USAGE
+12:20:28.72 (72330441)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 19 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:20:28.72 (72330441)|CUMULATIVE_LIMIT_USAGE_END
+
+12:20:28.0 (72398314)|CODE_UNIT_FINISHED|VF: /apex/leadvisualizer
+12:20:28.0 (73301260)|EXECUTION_FINISHED

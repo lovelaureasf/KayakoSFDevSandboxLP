@@ -1,0 +1,74 @@
+35.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:24:48.0 (324574)|USER_INFO|[EXTERNAL]|005p0000001vkCQ|sruti.srivastava@aurea.com.devsandbox|India Standard Time|GMT+05:30
+12:24:48.0 (362809)|EXECUTION_STARTED
+12:24:48.0 (373445)|CODE_UNIT_STARTED|[EXTERNAL]|06610000001Hj2u|VF: /apex/leadvisualizer
+12:24:48.0 (9122711)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (18131381)|SOQL_EXECUTE_BEGIN|[26]|Aggregations:0|SELECT id, Stage__c, Rejected__c, Status, DaysInMQL__c, DaysInSAL__c, DaysInSQL__c, DaysInSRL__c, DaysInSDL__c, ConvertedOpportunityId, OwnerId, unresponsive__c FROM lead WHERE id = :tmpVar1 LIMIT 1
+12:24:48.0 (26896603)|SOQL_EXECUTE_END|[26]|Rows:1
+12:24:48.0 (27375125)|SOQL_EXECUTE_BEGIN|[27]|Aggregations:0|SELECT CreatedDate, Field, Id, IsDeleted, LeadId, OldValue, NewValue FROM LeadHistory WHERE leadid = :tmpVar1 ORDER BY createdDate ASC NULLS FIRST
+12:24:48.0 (34495804)|SOQL_EXECUTE_END|[27]|Rows:15
+12:24:48.0 (35696967)|USER_DEBUG|[79]|DEBUG|MQL2SAL MAP{MQL2SAL=2018-11-10 06:48:55}
+12:24:48.0 (35967405)|USER_DEBUG|[80]|DEBUG|leadhist(LeadHistory:{CreatedDate=2018-11-10 03:07:57, Field=created, Id=017p000004tyUA3AAM, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=null, NewValue=null}, LeadHistory:{CreatedDate=2018-11-10 03:07:57, Field=StageToMQLDate__c, Id=017p000004tyUA4AAM, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=null, NewValue=2018-11-10 00:00:00}, LeadHistory:{CreatedDate=2018-11-10 03:07:57, Field=Owner, Id=017p000004tyUA5AAM, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=Sruti Srivastava, NewValue=Kerryann Tomas}, LeadHistory:{CreatedDate=2018-11-10 03:07:57, Field=Owner, Id=017p000004tyUA6AAM, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=005p0000001vkCQAAY, NewValue=005p0000002JlTLAA0}, LeadHistory:{CreatedDate=2018-11-10 03:30:29, Field=Owner, Id=017p000004u2u0CAAQ, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=005p0000002JlTLAA0, NewValue=00510000008AOFXAA4}, LeadHistory:{CreatedDate=2018-11-10 03:30:29, Field=Owner, Id=017p000004u2u0BAAQ, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=Kerryann Tomas, NewValue=Michael Smith}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=Stage__c, Id=017p000004u4rDbAAI, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=MQL, NewValue=SAL}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=StageToSALDate__c, Id=017p000004u4rDcAAI, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=null, NewValue=2018-11-10 00:00:00}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=Owner, Id=017p000004u4rDZAAY, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=Michael Smith, NewValue=Kerryann Tomas}, LeadHistory:{CreatedDate=2018-11-10 06:48:55, Field=Owner, Id=017p000004u4rDaAAI, IsDeleted=false, LeadId=00Qp0000004BesDEAS, OldValue=00510000008AOFXAA4, NewValue=005p0000002JlTLAA0}, ...)
+12:24:48.0 (36033339)|USER_DEBUG|[81]|DEBUG|the value of mql2sal is2018-11-10 06:48:55
+12:24:48.0 (36204430)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36346110)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36414590)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36500538)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36737165)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36821315)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (36956573)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37042678)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37161493)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37240494)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37383782)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37462243)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37518354)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37594051)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37646751)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37721668)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37852736)|USER_DEBUG|[113]|DEBUG|Case1
+12:24:48.0 (37897959)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (37978279)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38101428)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38179283)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38233785)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38308995)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38362127)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38436658)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38490227)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38563943)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38616359)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38691401)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38743431)|EXCEPTION_THROWN|[168]|System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (38818016)|USER_DEBUG|[172]|DEBUG|exception is System.NullPointerException: Attempt to de-reference a null object
+12:24:48.0 (39167951)|SOQL_EXECUTE_BEGIN|[181]|Aggregations:0|SELECT id FROM UserRole 
+12:24:48.0 (42823621)|SOQL_EXECUTE_END|[181]|Rows:2
+12:24:48.0 (45144623)|SOQL_EXECUTE_BEGIN|[185]|Aggregations:0|SELECT id, name FROM user WHERE (id = :tmpVar1 AND UserRoleId IN :tmpVar2) LIMIT 1
+12:24:48.0 (48859913)|SOQL_EXECUTE_END|[185]|Rows:1
+12:24:48.0 (49170363)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (49752263)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (50434139)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (50856883)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (56900101)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (57156216)|SYSTEM_MODE_ENTER|true
+12:24:48.0 (58696307)|VF_SERIALIZE_VIEWSTATE_BEGIN|06610000001Hj2u
+12:24:48.0 (61522644)|VF_SERIALIZE_VIEWSTATE_END
+12:24:48.63 (63950002)|CUMULATIVE_LIMIT_USAGE
+12:24:48.63 (63950002)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 19 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:24:48.63 (63950002)|CUMULATIVE_LIMIT_USAGE_END
+
+12:24:48.0 (63989641)|CODE_UNIT_FINISHED|VF: /apex/leadvisualizer
+12:24:48.0 (64723158)|EXECUTION_FINISHED
