@@ -5580,15 +5580,17 @@
         "mmState": "clean"
     },
     "BatchEmailTest.cls": {
-        "createdById": "00510000005W30JAAS",
-        "createdByName": "Sagar Pareek",
-        "createdDate": "2016-05-13T03:18:04.000Z",
-        "fileName": "unpackaged/classes/BatchEmailTest.cls",
-        "fullName": "BatchEmailTest",
         "id": "01p10000001cyIZAAY",
+        "name": "BatchEmailTest",
+        "createdDate": "2016-05-13T03:18:04.000+0000",
+        "createdById": "00510000005W30JAAS",
+        "namespacePrefix": null,
         "lastModifiedById": "005p0000002KogHAAS",
+        "lastModifiedDate": "2018-11-10T06:35:10.000+0000",
+        "fullName": "BatchEmailTest",
+        "fileName": "unpackaged/classes/BatchEmailTest.cls",
+        "createdByName": "Sagar Pareek",
         "lastModifiedByName": "Lovel Panchal",
-        "lastModifiedDate": "2018-11-08T13:34:58.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

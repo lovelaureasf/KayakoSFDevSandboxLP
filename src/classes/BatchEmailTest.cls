@@ -1,4 +1,4 @@
-// To test Ci CD --
+// Test comeents
 @isTest(SeeAllData = true)
 public class BatchEmailTest {
     static testMethod void positivescenario(){
@@ -12,3 +12,4 @@ public class BatchEmailTest {
     Test.stopTest();
     }
 }
+// Test 
