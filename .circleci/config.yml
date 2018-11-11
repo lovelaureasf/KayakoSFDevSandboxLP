@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: run SonarScanner
-          command: run: mvn sonar:sonar -Dsonar.organization=lovelaureasf-github -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=7e68eefe869c892f43473456b7768b5b8a8fa0d6
+          command: mvn sonar:sonar -Dsonar.organization=lovelaureasf-github -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=7e68eefe869c892f43473456b7768b5b8a8fa0d6
       - run: 
           name: ant retrieve
           command: ant retrieve
