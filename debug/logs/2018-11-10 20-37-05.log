@@ -1,0 +1,3 @@
+38.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+15:06:55.29 (29563728)|SOQL_EXECUTE_BEGIN|[38]|Aggregations:0|SELECT id, name, kfs__Active__c, kfs__Domain__c, kfs__Password__c, kfs__Token__c, kfs__Token_Expiry__c, kfs__Username__c, kfs__SendEventsToKayako__c FROM kfs__Kayako_Setting__c LIMIT 1
+15:06:55.29 (32552125)|SOQL_EXECUTE_END|[38]|Rows:1
