@@ -5,9 +5,6 @@ jobs:
       - image: circleci/openjdk:8-jdk
     steps:
       - checkout
-      - run:
-          name: run SonarScanner
-          command: mvn sonar:sonar
       - run: 
           name: ant retrieve
           command: ant retrieve
