@@ -8,18 +8,22 @@ jobs:
       - run:
           name: check Path
           command: echo $PATH
+          
       - run:
-          name: check Path
+          name: Add Path
           command: export PATH=$PATH:/sonarqube-6.7.5/bin/linux-x86-64
       - run:
           name: check Path
-          command: echo $PATH    
+          command: echo $PATH
+          
        - run:
           name: Start Sonar
-          command: sonar     
+          command: sonar  
+          
       - run: 
           name: ant retrieve
           command: ant retrieve
+          
       - run: 
           name: ant push
           command: ant push
