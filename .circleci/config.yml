@@ -29,7 +29,7 @@ jobs:
               - pmd-bin-6.0.1
       - run:
           name: Run Static Analysis
-          command: pmd-bin-6.0.1/bin/run.sh pmd -d ~/home/circleci/project/DirOutput -R ~/home/circleci/project/apexruleset.xml -f html -reportfile ~/home/circleci/project/Scan.html
+          command: pmd-bin-6.0.1/bin/run.sh pmd -d ~/home/circleci/project/DirOutput -R https://github.com/lovelaureasf/KayakoSFDevSandboxLP/blob/master/apexruleset.xml -f html -reportfile Scan.html
       - store_artifacts:
-          path: static-analysis.txt
+          path: Scan.html
          
