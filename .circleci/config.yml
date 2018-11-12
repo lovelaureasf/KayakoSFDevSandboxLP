@@ -6,8 +6,17 @@ jobs:
     steps:
       - checkout
       - run:
-          name: run SonarScanner
-          command: mvn sonar:sonar -Dsonar.organization=lovelaureasf-github -Dsonar.host.url=https://sonarcloud.io   -Dsonar.login=7e68eefe869c892f43473456b7768b5b8a8fa0d6
+          name: check Path
+          command: echo $PATH
+      - run:
+          name: check Path
+          command: export PATH=$PATH:/sonarqube-6.7.5/bin/linux-x86-64
+      - run:
+          name: check Path
+          command: echo $PATH    
+       - run:
+          name: Start Sonar
+          command: sonar     
       - run: 
           name: ant retrieve
           command: ant retrieve

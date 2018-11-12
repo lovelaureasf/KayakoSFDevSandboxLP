@@ -1,11 +1,24 @@
-<project name="Sample usage of Salesforce Ant tasks" default="push" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" default="push" basedir="." xmlns:sf="antlib:com.salesforce" xmlns:sonar="antlib:org.sonar.ant">
+	<!-- Define the SonarQube global properties (the most usual way is to pass these properties via the command line) -->
+	<property name="sonar.host.url" value="http://localhost:9000" />
+	<!-- Define the SonarQube project properties -->
+	<property name="sonar.projectKey" value="org.sonarqube:sonarqube-scanner-ant" />
+	<property name="sonar.projectName" value="Example of SonarQube Scanner for Ant Usage" />
+	<property name="sonar.projectVersion" value="1.0" />
+	<property name="sonar.sources" value="src" />
+	<property name="sonar.java.binaries" value="build" />
+	<property name="sonar.java.libraries" value="lib/*.jar" /> 
     <property file="build.properties"/>
     <property environment="env"/>
-    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
-        <classpath>
-            <pathelement location="ant-salesforce.jar" />        	
-        </classpath>
-    </taskdef>
+	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml" classpath="/path/sonar-ant-task.jar"/>
+    <target name="sonar">
+		<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+        <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
+			<classpath path="ant-salesforce.jar" />
+		</taskdef>
+    <!-- Execute SonarQube Scanner for Ant Analysis -->
+    <sonar:sonar />
+	</target>
 	<target name="retrieve">
 	 <mkdir dir="DirOutput"/>
 	 <sf:retrieve username="${sf.kayakousername}" password="${sf.kayakopassword}"  serverurl="${sf.serverurl}" retrieveTarget="DirOutput" pollWaitMillis="40000" unpackaged="package.xml"/>
@@ -13,4 +26,5 @@
 	<target name="push">
 	      <sf:deploy username="${sf.kayakouatusername}" password="${sf.kayakouatpassword}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="DirOutput" rollbackOnError="true" />
     </target>
-</project>
+</project>           
+
