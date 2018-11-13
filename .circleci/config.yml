@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Run Static Analysis
           command: |
-              pmd-bin-6.9.0/bin/run.sh pmd -d /home/circleci/project/DirOutput/src -R pmd-bin-6.9.0/apexruleset.xml -f text -l apex -r static-analysis.txt
+              pmd-bin-6.9.0/bin/run.sh pmd -d /home/circleci/project/DirOutput/src -R pmd-bin-6.9.0/apexruleset.xml -f text -l apex -r Kayako-analysis.html
       - store_artifacts:
-          path: static-analysis.txt
+          path: /home/circleci/project/static-analysis.html
          
