@@ -132,10 +132,31 @@
 	"buffers":
 	[
 		{
+			"contents": "<!--Test test -->\n<apex:page id=\"changePassword\" showHeader=\"false\" controller=\"ChangePasswordController\" title=\"{!$Label.site.change_password}\">\n  <apex:composition template=\"{!$Site.Template}\">\n    <apex:define name=\"body\">  \n      <center>\n        <apex:panelGrid bgcolor=\"white\" columns=\"1\"> \n          <br/>\n          <br/>\n          <apex:panelGrid width=\"758\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"white\" columns=\"1\" styleClass=\"topPanelContainer\"> \n            <br/>\n            <apex:outputPanel layout=\"block\" styleClass=\"topPanel\">\n              <apex:panelGrid width=\"758\" cellpadding=\"0\" cellspacing=\"0\" bgcolor=\"white\" columns=\"2\"> \n                <apex:image url=\"{!URLFOR($Resource.SiteSamples, 'img/clock.png')}\"/>\n                <apex:panelGroup >\n                  <br/>\n                  <apex:outputText styleClass=\"title\" value=\"{!$Label.site.change_your_password}\"/>\n                  <br/>\n                  <apex:form id=\"theForm\">\n                    <apex:pageMessages id=\"error\"/>\n                    <apex:panelGrid columns=\"2\" style=\"margin-top:1em;\">\n                      <apex:outputLabel rendered=\"{! !$Site.IsPasswordExpired}\" value=\"{!$Label.site.old_password}\" for=\"oldpsw\"/>\n                      <apex:inputSecret required=\"true\" id=\"oldpsw\" rendered=\"{! !$Site.IsPasswordExpired}\" value=\"{!oldPassword}\"/>\n                      <apex:outputLabel value=\"{!$Label.site.new_password}\" for=\"psw\"/>\n                      <apex:inputSecret required=\"true\" id=\"psw\" value=\"{!newPassword}\"/>\n                      <apex:outputLabel value=\"{!$Label.site.verify_new_password}\" for=\"vpsw\"/>\n                      <apex:inputSecret required=\"true\" id=\"vpsw\" value=\"{!verifyNewPassword}\"/>\n                      <apex:outputText value=\"\"/>\n                      <apex:commandButton id=\"cpwbtn\" action=\"{!changePassword}\" value=\"{!$Label.site.change_password}\"/>\n                    </apex:panelGrid> \n                  </apex:form>                  \n                  <br/>\n                </apex:panelGroup>\n              </apex:panelGrid> \n             </apex:outputPanel>\n            <c:SiteFooter />\n          </apex:panelGrid> \n       </apex:panelGrid>\n      </center>\n      <br/>\n    </apex:define>\n  </apex:composition>\n</apex:page>",
 			"file": "src/pages/ChangePassword.page",
+			"file_size": 2271,
+			"file_write_time": 131862282793326510,
 			"settings":
 			{
 				"buffer_size": 2271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/AccountDataAccess.cls",
+			"settings":
+			{
+				"buffer_size": 453,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/BatchEmailTest.cls",
+			"settings":
+			{
+				"buffer_size": 435,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -177,10 +198,12 @@
 	"expanded_folders":
 	[
 		"/C/Users/lpanchal/Documents/Kayako Dev",
-		"/C/Users/lpanchal/Documents/Kayako Dev/src"
+		"/C/Users/lpanchal/Documents/Kayako Dev/src",
+		"/C/Users/lpanchal/Documents/Kayako Dev/src/classes"
 	],
 	"file_history":
 	[
+		"/C/Users/lpanchal/Documents/Kayako Dev/src/classes/AccountDataAccessTest.cls",
 		"/C/Users/lpanchal/Documents/Kayako Dev/src/package.xml",
 		"/C/Users/lpanchal/Documents/FullCast/debug/logs/2018-10-22 22-10-17.log",
 		"/C/Users/lpanchal/Documents/FullCast/debug/logs/2018-10-22 21-05-53.log",
@@ -279,7 +302,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -304,6 +327,64 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Visualforce.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/classes/AccountDataAccess.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								453,
+								453
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/classes/BatchEmailTest.cls",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								435,
+								435
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -348,7 +429,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 126.0
+		"height": 272.0
 	},
 	"output.find_results":
 	{
@@ -367,6 +448,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"BatchE",
+				"src\\classes\\BatchEmailTest.cls"
+			],
 			[
 				"testdat",
 				"src\\classes\\FullcastTestDataGenerator.cls"
